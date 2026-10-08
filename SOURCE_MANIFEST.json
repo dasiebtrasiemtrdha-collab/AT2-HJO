@@ -1,0 +1,30 @@
+{
+  "scope": "native Python source",
+  "software": "4.0.2-public",
+  "code_hash": "397d12fc0031f6202aa7547c5b67bd2b5e5a678c0c06915df8c95426cb9aaf50",
+  "files": {
+    "src/at2hjo/__init__.py": "105b0fbb2fb13bba02f4b2fefa3bf6cfb89224ff7a2f0511edbe48b3061d4295",
+    "src/at2hjo/__main__.py": "e51d0c0d3498c4a3f184d14d8fc1c41b976792cdf3a8283adefd934f4a9df92d",
+    "src/at2hjo/cli.py": "e947f28720e7763893a2c1c8ff16ab23e950023629bdc2c1157c5526ffd124d7",
+    "src/at2hjo/communications/__init__.py": "edb3a8a571b1820036d2b6775f9f780f774f5cbfa8b1e1a60879dab6962a842e",
+    "src/at2hjo/communications/channels.py": "27f1d2051ff24db962cfbae85176beb28bc0a3a0adb7ca55f6338ef69befc33d",
+    "src/at2hjo/communications/configuration.py": "5aeeb3cbd821f9c0d87aa0916303a10023df983539532ef61a0c88da75ee3515",
+    "src/at2hjo/communications/units.py": "1df59889ab82e299b39073be018e2701c1fde1db9559f2999a66e14e6e672540",
+    "src/at2hjo/device.py": "fcb42412bf16f2d31098ea94b5cd3ffe3bda1cdb57e7bab6a3daee48fa95eeb6",
+    "src/at2hjo/geometry/__init__.py": "9606ee779eaaa9610e7c38bafe1f3884e56c62ca9a7fc53800d06c8a8ca5c5aa",
+    "src/at2hjo/geometry/coordinates.py": "82955060d79222d252c5fd464d7a8e9df124ce33e49fec83ca6a031b8a9a4241",
+    "src/at2hjo/geometry/orbits.py": "693b4ca0bd1387392eae7089c88b548212d6369fe158b1e7d4681e6763042ab9",
+    "src/at2hjo/revision4/__init__.py": "ff0efa60b8e4033c33e7c7f2c1d298690412afc831520bd175ef2c1e65add217",
+    "src/at2hjo/revision4/__main__.py": "b72d6210c14303737821fbb3c2f6a4b0fd2ab11b4e77469141e2cd5a4a1e876e",
+    "src/at2hjo/revision4/config.py": "80df250637465b5f6969fa75a4e2882b12d8c9c9c4299ab38d0167d3634f3897",
+    "src/at2hjo/revision4/dataset.py": "767b8c1c26cba5b1561fcd1c5e71451b8b117196eaae42f8351ad091510457e4",
+    "src/at2hjo/revision4/deployment_engine.py": "9e2a773168e3e529287d555e5d0287e4c7714397de4b72cecd5706a5e85f51bc",
+    "src/at2hjo/revision4/environment.py": "c06e31ecf945520c45310e1a6c421b46e5201250de801dd89eff8104b8abc216",
+    "src/at2hjo/revision4/inputs.py": "0930211280c3cfb4ac44820f8df7aad70a75cf11d2e38835e4c39bcf315e4e66",
+    "src/at2hjo/revision4/learning.py": "a0e96c2d59b46a0a383770c27548f032277a4d024c48eacc6e896c64f8405333",
+    "src/at2hjo/revision4/networks.py": "2034656e29cc2a5ca6fe12938f38e93ae691c10acb282a963aa5a9a30435a007",
+    "src/at2hjo/revision4/physics.py": "4c1b42fce3269bf90f22fe7cdedcc087ec7400bff26203d16e16a1163dbea604",
+    "src/at2hjo/revision4/reporting.py": "dd6e8057a2bf4d1fb510f11a4afdb13d1e0b85e12812fada86818ed1cd9d901c",
+    "src/at2hjo/revision4/runner.py": "84b89e524a192a14956eeec064aea2e4609d40e6cb781c064fc8732c775cbf73"
+  }
+}

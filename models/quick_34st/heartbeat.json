@@ -1,0 +1,13 @@
+{
+  "episode": 1,
+  "slot": 17,
+  "counters": {
+    "environment_steps": 34,
+    "critic_updates": 27,
+    "actor_updates": 13,
+    "target_updates": 13,
+    "dqn_updates": 3,
+    "tr_updates": 4
+  },
+  "updated_at_unix": 1791482325.1215463
+}

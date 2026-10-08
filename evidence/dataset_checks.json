@@ -1,0 +1,128 @@
+{
+  "datasets": {
+    "example": {
+      "hash_validation_passed": true,
+      "seed": 4000,
+      "slots": 17,
+      "offered_requests": 510,
+      "links_shape": [
+        17,
+        40,
+        40,
+        5
+      ],
+      "drivers_shape": [
+        17,
+        432
+      ],
+      "deadline_range_s": [
+        0.5005391379053838,
+        1.9929998730695617
+      ],
+      "input_bits_range": [
+        500087.3483327708,
+        1986576.33366861
+      ],
+      "cycles_range": [
+        501436389.8223085,
+        1999297169.4513237
+      ]
+    },
+    "example_open": {
+      "hash_validation_passed": true,
+      "seed": 4000,
+      "slots": 35,
+      "offered_requests": 782,
+      "links_shape": [
+        35,
+        40,
+        40,
+        5
+      ],
+      "drivers_shape": [
+        35,
+        432
+      ],
+      "deadline_range_s": [
+        20.007188505405118,
+        39.95304874958728
+      ],
+      "input_bits_range": [
+        500087.3483327708,
+        1997755.9165775303
+      ],
+      "cycles_range": [
+        500120586.2950611,
+        1999297169.4513237
+      ]
+    },
+    "generated_public_regular4000": {
+      "hash_validation_passed": true,
+      "seed": 4000,
+      "slots": 17,
+      "offered_requests": 510,
+      "links_shape": [
+        17,
+        40,
+        40,
+        5
+      ],
+      "drivers_shape": [
+        17,
+        432
+      ],
+      "deadline_range_s": [
+        0.5005391379053838,
+        1.9929998730695617
+      ],
+      "input_bits_range": [
+        500087.3483327708,
+        1986576.33366861
+      ],
+      "cycles_range": [
+        501436389.8223085,
+        1999297169.4513237
+      ]
+    },
+    "generated_public_open4000": {
+      "hash_validation_passed": true,
+      "seed": 4000,
+      "slots": 35,
+      "offered_requests": 782,
+      "links_shape": [
+        35,
+        40,
+        40,
+        5
+      ],
+      "drivers_shape": [
+        35,
+        432
+      ],
+      "deadline_range_s": [
+        20.007188505405118,
+        39.95304874958728
+      ],
+      "input_bits_range": [
+        500087.3483327708,
+        1997755.9165775303
+      ],
+      "cycles_range": [
+        500120586.2950611,
+        1999297169.4513237
+      ]
+    }
+  },
+  "regeneration_comparison": {
+    "regular": {
+      "links_identical": true,
+      "drivers_identical": true,
+      "requests_bytes_identical": true
+    },
+    "open": {
+      "links_identical": true,
+      "drivers_identical": true,
+      "requests_bytes_identical": true
+    }
+  }
+}

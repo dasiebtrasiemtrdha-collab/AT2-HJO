@@ -1,0 +1,21 @@
+{
+  "scope": "functional model asset including binary checkpoints",
+  "software": "4.0.2-public",
+  "files": {
+    "README.md": "96a62b3308f6604a6660b72aa191da3850d5aeb69c313708475663705651c45e",
+    "audit.json": "8efb315fab726861fc15e4de6e8ad069e2bb4113a9b9b9234018318964972166",
+    "config.json": "db1a3d3fe52e1062b576f84d90294399dfb8ee3a8bdc05997678a8790ecbd673",
+    "episode_metrics.json": "d202fb87ed2065be77ee33cfaea6fba20f3abe200165cc1db845e442c702cfba",
+    "evaluation.json": "c514138a6985dad17c7fd385d68d5d675518056f1cf0aba22257decd5082d480",
+    "evaluation.pt": "7aa6b6931a810e4e34ee4d6933eee4ce1a69c7d3482e00b2eef9e033b5c72708",
+    "heartbeat.json": "21ea9de1abb32c54cec2d0383e0ca10e164c6149c65798ad9cf27207a83d1777",
+    "intervals.jsonl": "04fa953779101c369f90144a01b715c218a8900810c7c6af4519878fd4dd4c02",
+    "network_summary.json": "76e57dd5ac028b2435b3b1d576d63e4920286b0b684addc0a6e49b521fbbc08e",
+    "resume.json": "e573cee651427770c06517fb4b68198307db39361524518f0cbfdd1271f2983a",
+    "resume.pt": "93dc13df6be4c4055aefabf22920a6dfdc41c37ef2be2a9db039937de238f41a",
+    "run.json": "cecf6fe435c04635ce516d88b507cf5ef8e65aeb597958117757b5e1bbc2e579",
+    "slots.jsonl": "95aee9c815dd073db75a159273cda7a8a2fdab1f5ccac09de067323309f1a3e3",
+    "state_layout.json": "c8d3b31da8936261ecbc18dfc0d6944b400594de7fe72fac472da55b2368b048",
+    "status.json": "6398e4ae90a6d822f4143e4b61d63255e4e25f961ed112b253322064117d438f"
+  }
+}

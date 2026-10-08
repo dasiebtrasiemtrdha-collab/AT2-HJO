@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "episodes": [
+    {
+      "episode": 1,
+      "passed": true,
+      "absolute_tolerance": 1e-08,
+      "errors": {
+        "task": 9.094947017729282e-13,
+        "temperature": 0.0,
+        "deployment": 0.0,
+        "objective_p0": 3.552713678800501e-15,
+        "ST_operating_cost": 3.552713678800501e-15,
+        "slot_cost_task": 0.0,
+        "slot_cost_temperature": 0.0,
+        "slot_cost_deployment": 0.0,
+        "slot_reward_st": 0.0,
+        "energy_recursion": 0.0,
+        "LT_discounted_return": 2.842170943040401e-14
+      },
+      "max_absolute_error": 9.094947017729282e-13
+    },
+    {
+      "episode": 2,
+      "passed": true,
+      "absolute_tolerance": 1e-08,
+      "errors": {
+        "task": 9.094947017729282e-13,
+        "temperature": 0.0,
+        "deployment": 7.105427357601002e-15,
+        "objective_p0": 3.552713678800501e-15,
+        "ST_operating_cost": 0.0,
+        "slot_cost_task": 0.0,
+        "slot_cost_temperature": 0.0,
+        "slot_cost_deployment": 0.0,
+        "slot_reward_st": 0.0,
+        "energy_recursion": 0.0,
+        "LT_discounted_return": 0.0
+      },
+      "max_absolute_error": 9.094947017729282e-13
+    }
+  ]
+}

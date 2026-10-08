@@ -1,0 +1,1 @@
+Dependencies retain their respective licenses. See the requirement locks and bundled dependency notices. No new project-wide research-source license was assigned during preparation; see LICENSE_STATUS.md.

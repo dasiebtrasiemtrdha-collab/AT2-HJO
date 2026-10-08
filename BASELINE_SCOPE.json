@@ -1,0 +1,73 @@
+{
+  "source": "main.tex V-A/V-B; response Reviewer3-Q4/Q5",
+  "methods": {
+    "AOS-SAC": "AOS LT + SAC ST; fixed two-timescale",
+    "TTO-SCRA": "penalty/Lagrangian LT; alternating/quadratic transform ST",
+    "T2S-DRL": "separate LT/ST agents",
+    "DT-EESD": "self-attention + double-duelling DQN + multi-agent DDPG adaptation",
+    "ASO-TD3": "atom-search LT + TD3 ST adaptation"
+  },
+  "protocol": {
+    "candidate_configurations": 20,
+    "training_seeds": [
+      1000,
+      1001,
+      1002
+    ],
+    "validation_seeds": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004
+    ],
+    "paired_test_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "episodes": 2500,
+    "ST_slots": 500,
+    "learning_rate_candidates": [
+      1e-05,
+      3e-05,
+      0.0001,
+      0.0003
+    ],
+    "batch_candidates": [
+      64,
+      128,
+      256
+    ],
+    "tau_candidates": [
+      0.001,
+      0.005,
+      0.01
+    ],
+    "fixed_interval_candidates": [
+      5,
+      10,
+      15
+    ]
+  },
+  "selected_parameters": "Not recovered from core-only materials; no invented final baseline configurations.",
+  "native_sources_and_adapters": "Not bundled; legacy private adapters not validated for4.0.",
+  "all_external_comparisons_reproduced": false
+}

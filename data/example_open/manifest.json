@@ -1,0 +1,296 @@
+{
+  "input_schema_version": "manuscript40-input-v2",
+  "science": "tcom_4_0_fifo_certificate_v1",
+  "seed": 4000,
+  "horizon": 35,
+  "trace": "stochastic_open",
+  "config_hash": "62600ef5fd952d4229b9c9e8e82d5d7bc22be726fcefd2b511455c896b9e712f",
+  "input_config_hash": "886fe98b3893fe90eb35fe163650dfd7f98e352a05f5a4551aedba4ea772f171",
+  "files": {
+    "trace.npz": "8942e3eafb9b79b72773cf26b39add716a5d059695a7ca0e606441f343b904ac",
+    "requests.jsonl": "2ba5c301632ebfacded11a60a61d6a230319513eee78748080f42ee7b22f5bf6",
+    "config.json": "17b34e43066d3382b3df2a8fd8779623e731b142d0b62eac974f1ea7427e875e"
+  },
+  "schema": {
+    "link_axis": [
+      "received_signal_power_W",
+      "bandwidth_Hz",
+      "tx_electrical_power_W",
+      "rx_electrical_power_W",
+      "availability"
+    ],
+    "request_fields": [
+      "input_bits",
+      "cycles",
+      "service_zero_based",
+      "deadline_s",
+      "arrival_slot_zero_based"
+    ],
+    "drivers": {
+      "underwater_position": {
+        "start": 0,
+        "end": 90,
+        "shape": [
+          30,
+          3
+        ],
+        "units": "m",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1000000.0
+        }
+      },
+      "command_velocity": {
+        "start": 90,
+        "end": 150,
+        "shape": [
+          30,
+          2
+        ],
+        "units": "m/s",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 3.0
+        }
+      },
+      "cruise_speed": {
+        "start": 150,
+        "end": 180,
+        "shape": [
+          30
+        ],
+        "units": "m/s",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 3.0
+        }
+      },
+      "waypoint": {
+        "start": 180,
+        "end": 240,
+        "shape": [
+          30,
+          2
+        ],
+        "units": "m",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 650.0
+        }
+      },
+      "area_presence": {
+        "start": 240,
+        "end": 270,
+        "shape": [
+          30
+        ],
+        "units": "boolean",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "traffic_high_state": {
+        "start": 270,
+        "end": 300,
+        "shape": [
+          30
+        ],
+        "units": "boolean",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "ocean_current": {
+        "start": 300,
+        "end": 302,
+        "shape": [
+          2
+        ],
+        "units": "m/s",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 0.5
+        }
+      },
+      "slot_clock": {
+        "start": 302,
+        "end": 303,
+        "shape": [
+          1
+        ],
+        "units": "zero-based ST slot",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 35.0
+        }
+      },
+      "popularity_rank_shift": {
+        "start": 303,
+        "end": 304,
+        "shape": [
+          1
+        ],
+        "units": "zero-based rank shift",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "solar_phase": {
+        "start": 304,
+        "end": 305,
+        "shape": [
+          1
+        ],
+        "units": "rad",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "log_turbidity": {
+        "start": 305,
+        "end": 306,
+        "shape": [
+          1
+        ],
+        "units": "log multiplier",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "satellite_position_enu": {
+        "start": 306,
+        "end": 324,
+        "shape": [
+          6,
+          3
+        ],
+        "units": "m",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 10000000.0
+        }
+      },
+      "satellite_velocity_enu": {
+        "start": 324,
+        "end": 342,
+        "shape": [
+          6,
+          3
+        ],
+        "units": "m/s",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 10000.0
+        }
+      },
+      "orbital_phase_sin": {
+        "start": 342,
+        "end": 348,
+        "shape": [
+          6
+        ],
+        "units": "dimensionless",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "orbital_phase_cos": {
+        "start": 348,
+        "end": 354,
+        "shape": [
+          6
+        ],
+        "units": "dimensionless",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "rf_fading_memory": {
+        "start": 354,
+        "end": 390,
+        "shape": [
+          3,
+          6,
+          2
+        ],
+        "units": "standard-normal quadratures",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "bn_fading_memory": {
+        "start": 390,
+        "end": 408,
+        "shape": [
+          3,
+          3,
+          2
+        ],
+        "units": "standard-normal quadratures",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "bn_blockage_memory": {
+        "start": 408,
+        "end": 417,
+        "shape": [
+          3,
+          3
+        ],
+        "units": "boolean",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "buoy_sink_temperature": {
+        "start": 417,
+        "end": 420,
+        "shape": [
+          3
+        ],
+        "units": "deg C",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 80.0
+        }
+      },
+      "satellite_sunlit": {
+        "start": 420,
+        "end": 426,
+        "shape": [
+          6
+        ],
+        "units": "boolean",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      },
+      "solar_incidence": {
+        "start": 426,
+        "end": 432,
+        "shape": [
+          6
+        ],
+        "units": "dimensionless",
+        "scaling": {
+          "operation": "divide",
+          "divisor": 1.0
+        }
+      }
+    },
+    "ambient_c": "BN heat-sink temperature, shape B, degrees Celsius"
+  },
+  "formal_result": false
+}

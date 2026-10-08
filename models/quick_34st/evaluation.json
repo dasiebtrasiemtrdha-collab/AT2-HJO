@@ -1,0 +1,10 @@
+{
+  "science": "tcom_4_0_fifo_certificate_v1",
+  "version": "4.0.2-public",
+  "role": "evaluation",
+  "config_hash": "ea49eb398356b0c0cef23ad58b0b58ad13a8a0247b20ee43d6212edf56d71df0",
+  "code_hash": "397d12fc0031f6202aa7547c5b67bd2b5e5a678c0c06915df8c95426cb9aaf50",
+  "completed_episodes": 2,
+  "actual_ST_steps": 34,
+  "formal_result": false
+}

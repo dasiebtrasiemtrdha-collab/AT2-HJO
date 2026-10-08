@@ -1,0 +1,49 @@
+{
+  "software": "4.0.2-public",
+  "science": "tcom_4_0_fifo_certificate_v1",
+  "manuscript_revision": "4.5",
+  "verification_scope": "core functionality only, not complete manuscript numerical reproduction",
+  "formal_numerical_reproduction": false,
+  "pytest": {
+    "tests": 59,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 62.05,
+    "receipt": "evidence/pytest.xml"
+  },
+  "dependencies": {
+    "cpu_lock_installed": true,
+    "pip_check": "passed",
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "torch": "2.7.1+cpu"
+  },
+  "current_cuda_tested": false,
+  "source_code_hash": "397d12fc0031f6202aa7547c5b67bd2b5e5a678c0c06915df8c95426cb9aaf50",
+  "wheel_source_python_files": 23,
+  "functional_training": {
+    "steps": 34,
+    "episodes": 2,
+    "counters": {
+      "environment_steps": 34,
+      "critic_updates": 27,
+      "actor_updates": 13,
+      "target_updates": 13,
+      "dqn_updates": 4,
+      "tr_updates": 5
+    },
+    "raw_components_verified": true
+  },
+  "functional_evaluation": {
+    "steps": 17,
+    "weights_and_counters_unchanged": true,
+    "raw_components_verified": true
+  },
+  "functional_recovery": {
+    "total_steps": 51,
+    "resumed_steps": 17,
+    "raw_components_verified": true,
+    "runtime_matching_required": true
+  },
+  "privacy_scan": "No private hostnames/absolute paths/private keys detected in public project texts; dependency license attribution retained"
+}

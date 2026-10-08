@@ -1,0 +1,874 @@
+configuration,parameter,value
+development,science,"""tcom_4_0_fifo_certificate_v1"""
+development,physical_file,"""physical_defaults.json"""
+development,mode,"""certified"""
+development,trace,"""regular"""
+development,horizon,200
+development,episodes,100
+development,nodes,30
+development,buoys,3
+development,satellites,6
+development,services,20
+development,slot_s,10.0
+development,queue_capacity,8
+development,lt_intervals,"[5, 10, 15]"
+development,gamma,0.99
+development,gamma_st,0.99
+development,batch_lt,128
+development,batch_st,128
+development,replay,100000
+development,actor_lr,0.0001
+development,critic_lr,0.0003
+development,tr_lr,0.0003
+development,lr_min,1e-05
+development,lr_max,0.0003
+development,epsilon_eta,0.01
+development,tau,0.005
+development,rho,5.0
+development,prior_weights,"[0.3, 0.4, 0.3]"
+development,weights,"[0.5, 0.3, 0.2]"
+development,warmup,1000
+development,policy_delay,16
+development,exploration_sigma,0.1
+development,target_sigma,0.2
+development,target_clip,0.5
+development,grad_clip,1.0
+development,dqn_target_sync,200
+development,dqn_warmup,128
+development,hidden,"[256, 256]"
+development,history,4
+development,attention,64
+development,value_hidden,64
+development,head_temperature,2.0
+development,resource_init,1e-06
+development,other_init,0.001
+development,epsilon_start,1.0
+development,epsilon_end,0.05
+development,epsilon_decay_episodes,1000
+development,result_scope,"""development"""
+development,algorithm,"""joint"""
+development,formal_result,false
+development,training_seeds,"[2000, 2001, 2002]"
+development,evaluation_seeds,"[4000, 4001, 4002]"
+development,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+development_lt,science,"""tcom_4_0_fifo_certificate_v1"""
+development_lt,physical_file,"""physical_defaults.json"""
+development_lt,mode,"""certified"""
+development_lt,trace,"""regular"""
+development_lt,horizon,200
+development_lt,episodes,100
+development_lt,nodes,30
+development_lt,buoys,3
+development_lt,satellites,6
+development_lt,services,20
+development_lt,slot_s,10.0
+development_lt,queue_capacity,8
+development_lt,lt_intervals,"[5, 10, 15]"
+development_lt,gamma,0.99
+development_lt,gamma_st,0.99
+development_lt,batch_lt,128
+development_lt,batch_st,128
+development_lt,replay,100000
+development_lt,actor_lr,0.0001
+development_lt,critic_lr,0.0003
+development_lt,tr_lr,0.0003
+development_lt,lr_min,1e-05
+development_lt,lr_max,0.0003
+development_lt,epsilon_eta,0.01
+development_lt,tau,0.005
+development_lt,rho,5.0
+development_lt,prior_weights,"[0.3, 0.4, 0.3]"
+development_lt,weights,"[0.5, 0.3, 0.2]"
+development_lt,warmup,1000
+development_lt,policy_delay,16
+development_lt,exploration_sigma,0.1
+development_lt,target_sigma,0.2
+development_lt,target_clip,0.5
+development_lt,grad_clip,1.0
+development_lt,dqn_target_sync,200
+development_lt,dqn_warmup,128
+development_lt,hidden,"[256, 256]"
+development_lt,history,4
+development_lt,attention,64
+development_lt,value_hidden,64
+development_lt,head_temperature,2.0
+development_lt,resource_init,1e-06
+development_lt,other_init,0.001
+development_lt,epsilon_start,1.0
+development_lt,epsilon_end,0.05
+development_lt,epsilon_decay_episodes,1000
+development_lt,result_scope,"""development"""
+development_lt,algorithm,"""lt"""
+development_lt,formal_result,false
+development_lt,training_seeds,"[2000, 2001, 2002]"
+development_lt,evaluation_seeds,"[4000, 4001, 4002]"
+development_lt,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+development_st,science,"""tcom_4_0_fifo_certificate_v1"""
+development_st,physical_file,"""physical_defaults.json"""
+development_st,mode,"""certified"""
+development_st,trace,"""regular"""
+development_st,horizon,200
+development_st,episodes,100
+development_st,nodes,30
+development_st,buoys,3
+development_st,satellites,6
+development_st,services,20
+development_st,slot_s,10.0
+development_st,queue_capacity,8
+development_st,lt_intervals,"[5, 10, 15]"
+development_st,gamma,0.99
+development_st,gamma_st,0.99
+development_st,batch_lt,128
+development_st,batch_st,128
+development_st,replay,100000
+development_st,actor_lr,0.0001
+development_st,critic_lr,0.0003
+development_st,tr_lr,0.0003
+development_st,lr_min,1e-05
+development_st,lr_max,0.0003
+development_st,epsilon_eta,0.01
+development_st,tau,0.005
+development_st,rho,5.0
+development_st,prior_weights,"[0.3, 0.4, 0.3]"
+development_st,weights,"[0.5, 0.3, 0.2]"
+development_st,warmup,1000
+development_st,policy_delay,16
+development_st,exploration_sigma,0.1
+development_st,target_sigma,0.2
+development_st,target_clip,0.5
+development_st,grad_clip,1.0
+development_st,dqn_target_sync,200
+development_st,dqn_warmup,128
+development_st,hidden,"[256, 256]"
+development_st,history,4
+development_st,attention,64
+development_st,value_hidden,64
+development_st,head_temperature,2.0
+development_st,resource_init,1e-06
+development_st,other_init,0.001
+development_st,epsilon_start,1.0
+development_st,epsilon_end,0.05
+development_st,epsilon_decay_episodes,1000
+development_st,result_scope,"""development"""
+development_st,algorithm,"""st"""
+development_st,formal_result,false
+development_st,training_seeds,"[2000, 2001, 2002]"
+development_st,evaluation_seeds,"[4000, 4001, 4002]"
+development_st,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_certified,physical_file,"""physical_defaults.json"""
+formal_certified,mode,"""certified"""
+formal_certified,trace,"""regular"""
+formal_certified,horizon,500
+formal_certified,episodes,2500
+formal_certified,nodes,30
+formal_certified,buoys,3
+formal_certified,satellites,6
+formal_certified,services,20
+formal_certified,slot_s,10.0
+formal_certified,queue_capacity,8
+formal_certified,lt_intervals,"[5, 10, 15]"
+formal_certified,gamma,0.99
+formal_certified,gamma_st,0.99
+formal_certified,batch_lt,128
+formal_certified,batch_st,128
+formal_certified,replay,100000
+formal_certified,actor_lr,0.0001
+formal_certified,critic_lr,0.0003
+formal_certified,tr_lr,0.0003
+formal_certified,lr_min,1e-05
+formal_certified,lr_max,0.0003
+formal_certified,epsilon_eta,0.01
+formal_certified,tau,0.005
+formal_certified,rho,5.0
+formal_certified,prior_weights,"[0.3, 0.4, 0.3]"
+formal_certified,weights,"[0.5, 0.3, 0.2]"
+formal_certified,warmup,1000
+formal_certified,policy_delay,16
+formal_certified,exploration_sigma,0.1
+formal_certified,target_sigma,0.2
+formal_certified,target_clip,0.5
+formal_certified,grad_clip,1.0
+formal_certified,dqn_target_sync,200
+formal_certified,dqn_warmup,128
+formal_certified,hidden,"[256, 256]"
+formal_certified,history,4
+formal_certified,attention,64
+formal_certified,value_hidden,64
+formal_certified,head_temperature,2.0
+formal_certified,resource_init,1e-06
+formal_certified,other_init,0.001
+formal_certified,epsilon_start,1.0
+formal_certified,epsilon_end,0.05
+formal_certified,epsilon_decay_episodes,1000
+formal_certified,result_scope,"""planned_formal_certified"""
+formal_certified,algorithm,"""joint"""
+formal_certified,formal_result,false
+formal_certified,training_seeds,"[1000, 1001, 1002]"
+formal_certified,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_certified,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_certified,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_certified,independent_tuning_candidates,20
+formal_certified_M10,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_certified_M10,physical_file,"""physical_defaults.json"""
+formal_certified_M10,mode,"""certified"""
+formal_certified_M10,trace,"""regular"""
+formal_certified_M10,horizon,500
+formal_certified_M10,episodes,2500
+formal_certified_M10,nodes,10
+formal_certified_M10,buoys,3
+formal_certified_M10,satellites,6
+formal_certified_M10,services,20
+formal_certified_M10,slot_s,10.0
+formal_certified_M10,queue_capacity,8
+formal_certified_M10,lt_intervals,"[5, 10, 15]"
+formal_certified_M10,gamma,0.99
+formal_certified_M10,gamma_st,0.99
+formal_certified_M10,batch_lt,128
+formal_certified_M10,batch_st,128
+formal_certified_M10,replay,100000
+formal_certified_M10,actor_lr,0.0001
+formal_certified_M10,critic_lr,0.0003
+formal_certified_M10,tr_lr,0.0003
+formal_certified_M10,lr_min,1e-05
+formal_certified_M10,lr_max,0.0003
+formal_certified_M10,epsilon_eta,0.01
+formal_certified_M10,tau,0.005
+formal_certified_M10,rho,5.0
+formal_certified_M10,prior_weights,"[0.3, 0.4, 0.3]"
+formal_certified_M10,weights,"[0.5, 0.3, 0.2]"
+formal_certified_M10,warmup,1000
+formal_certified_M10,policy_delay,16
+formal_certified_M10,exploration_sigma,0.1
+formal_certified_M10,target_sigma,0.2
+formal_certified_M10,target_clip,0.5
+formal_certified_M10,grad_clip,1.0
+formal_certified_M10,dqn_target_sync,200
+formal_certified_M10,dqn_warmup,128
+formal_certified_M10,hidden,"[256, 256]"
+formal_certified_M10,history,4
+formal_certified_M10,attention,64
+formal_certified_M10,value_hidden,64
+formal_certified_M10,head_temperature,2.0
+formal_certified_M10,resource_init,1e-06
+formal_certified_M10,other_init,0.001
+formal_certified_M10,epsilon_start,1.0
+formal_certified_M10,epsilon_end,0.05
+formal_certified_M10,epsilon_decay_episodes,1000
+formal_certified_M10,result_scope,"""planned_formal_certified"""
+formal_certified_M10,algorithm,"""joint"""
+formal_certified_M10,formal_result,false
+formal_certified_M10,training_seeds,"[1000, 1001, 1002]"
+formal_certified_M10,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_certified_M10,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified_M10,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_certified_M10,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_certified_M10,independent_tuning_candidates,20
+formal_certified_M20,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_certified_M20,physical_file,"""physical_defaults.json"""
+formal_certified_M20,mode,"""certified"""
+formal_certified_M20,trace,"""regular"""
+formal_certified_M20,horizon,500
+formal_certified_M20,episodes,2500
+formal_certified_M20,nodes,20
+formal_certified_M20,buoys,3
+formal_certified_M20,satellites,6
+formal_certified_M20,services,20
+formal_certified_M20,slot_s,10.0
+formal_certified_M20,queue_capacity,8
+formal_certified_M20,lt_intervals,"[5, 10, 15]"
+formal_certified_M20,gamma,0.99
+formal_certified_M20,gamma_st,0.99
+formal_certified_M20,batch_lt,128
+formal_certified_M20,batch_st,128
+formal_certified_M20,replay,100000
+formal_certified_M20,actor_lr,0.0001
+formal_certified_M20,critic_lr,0.0003
+formal_certified_M20,tr_lr,0.0003
+formal_certified_M20,lr_min,1e-05
+formal_certified_M20,lr_max,0.0003
+formal_certified_M20,epsilon_eta,0.01
+formal_certified_M20,tau,0.005
+formal_certified_M20,rho,5.0
+formal_certified_M20,prior_weights,"[0.3, 0.4, 0.3]"
+formal_certified_M20,weights,"[0.5, 0.3, 0.2]"
+formal_certified_M20,warmup,1000
+formal_certified_M20,policy_delay,16
+formal_certified_M20,exploration_sigma,0.1
+formal_certified_M20,target_sigma,0.2
+formal_certified_M20,target_clip,0.5
+formal_certified_M20,grad_clip,1.0
+formal_certified_M20,dqn_target_sync,200
+formal_certified_M20,dqn_warmup,128
+formal_certified_M20,hidden,"[256, 256]"
+formal_certified_M20,history,4
+formal_certified_M20,attention,64
+formal_certified_M20,value_hidden,64
+formal_certified_M20,head_temperature,2.0
+formal_certified_M20,resource_init,1e-06
+formal_certified_M20,other_init,0.001
+formal_certified_M20,epsilon_start,1.0
+formal_certified_M20,epsilon_end,0.05
+formal_certified_M20,epsilon_decay_episodes,1000
+formal_certified_M20,result_scope,"""planned_formal_certified"""
+formal_certified_M20,algorithm,"""joint"""
+formal_certified_M20,formal_result,false
+formal_certified_M20,training_seeds,"[1000, 1001, 1002]"
+formal_certified_M20,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_certified_M20,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified_M20,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_certified_M20,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_certified_M20,independent_tuning_candidates,20
+formal_certified_lt,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_certified_lt,physical_file,"""physical_defaults.json"""
+formal_certified_lt,mode,"""certified"""
+formal_certified_lt,trace,"""regular"""
+formal_certified_lt,horizon,500
+formal_certified_lt,episodes,2500
+formal_certified_lt,nodes,30
+formal_certified_lt,buoys,3
+formal_certified_lt,satellites,6
+formal_certified_lt,services,20
+formal_certified_lt,slot_s,10.0
+formal_certified_lt,queue_capacity,8
+formal_certified_lt,lt_intervals,"[5, 10, 15]"
+formal_certified_lt,gamma,0.99
+formal_certified_lt,gamma_st,0.99
+formal_certified_lt,batch_lt,128
+formal_certified_lt,batch_st,128
+formal_certified_lt,replay,100000
+formal_certified_lt,actor_lr,0.0001
+formal_certified_lt,critic_lr,0.0003
+formal_certified_lt,tr_lr,0.0003
+formal_certified_lt,lr_min,1e-05
+formal_certified_lt,lr_max,0.0003
+formal_certified_lt,epsilon_eta,0.01
+formal_certified_lt,tau,0.005
+formal_certified_lt,rho,5.0
+formal_certified_lt,prior_weights,"[0.3, 0.4, 0.3]"
+formal_certified_lt,weights,"[0.5, 0.3, 0.2]"
+formal_certified_lt,warmup,1000
+formal_certified_lt,policy_delay,16
+formal_certified_lt,exploration_sigma,0.1
+formal_certified_lt,target_sigma,0.2
+formal_certified_lt,target_clip,0.5
+formal_certified_lt,grad_clip,1.0
+formal_certified_lt,dqn_target_sync,200
+formal_certified_lt,dqn_warmup,128
+formal_certified_lt,hidden,"[256, 256]"
+formal_certified_lt,history,4
+formal_certified_lt,attention,64
+formal_certified_lt,value_hidden,64
+formal_certified_lt,head_temperature,2.0
+formal_certified_lt,resource_init,1e-06
+formal_certified_lt,other_init,0.001
+formal_certified_lt,epsilon_start,1.0
+formal_certified_lt,epsilon_end,0.05
+formal_certified_lt,epsilon_decay_episodes,1000
+formal_certified_lt,result_scope,"""planned_formal_certified"""
+formal_certified_lt,algorithm,"""lt"""
+formal_certified_lt,formal_result,false
+formal_certified_lt,training_seeds,"[1000, 1001, 1002]"
+formal_certified_lt,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_certified_lt,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified_lt,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_certified_lt,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_certified_lt,independent_tuning_candidates,20
+formal_certified_st,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_certified_st,physical_file,"""physical_defaults.json"""
+formal_certified_st,mode,"""certified"""
+formal_certified_st,trace,"""regular"""
+formal_certified_st,horizon,500
+formal_certified_st,episodes,2500
+formal_certified_st,nodes,30
+formal_certified_st,buoys,3
+formal_certified_st,satellites,6
+formal_certified_st,services,20
+formal_certified_st,slot_s,10.0
+formal_certified_st,queue_capacity,8
+formal_certified_st,lt_intervals,"[5, 10, 15]"
+formal_certified_st,gamma,0.99
+formal_certified_st,gamma_st,0.99
+formal_certified_st,batch_lt,128
+formal_certified_st,batch_st,128
+formal_certified_st,replay,100000
+formal_certified_st,actor_lr,0.0001
+formal_certified_st,critic_lr,0.0003
+formal_certified_st,tr_lr,0.0003
+formal_certified_st,lr_min,1e-05
+formal_certified_st,lr_max,0.0003
+formal_certified_st,epsilon_eta,0.01
+formal_certified_st,tau,0.005
+formal_certified_st,rho,5.0
+formal_certified_st,prior_weights,"[0.3, 0.4, 0.3]"
+formal_certified_st,weights,"[0.5, 0.3, 0.2]"
+formal_certified_st,warmup,1000
+formal_certified_st,policy_delay,16
+formal_certified_st,exploration_sigma,0.1
+formal_certified_st,target_sigma,0.2
+formal_certified_st,target_clip,0.5
+formal_certified_st,grad_clip,1.0
+formal_certified_st,dqn_target_sync,200
+formal_certified_st,dqn_warmup,128
+formal_certified_st,hidden,"[256, 256]"
+formal_certified_st,history,4
+formal_certified_st,attention,64
+formal_certified_st,value_hidden,64
+formal_certified_st,head_temperature,2.0
+formal_certified_st,resource_init,1e-06
+formal_certified_st,other_init,0.001
+formal_certified_st,epsilon_start,1.0
+formal_certified_st,epsilon_end,0.05
+formal_certified_st,epsilon_decay_episodes,1000
+formal_certified_st,result_scope,"""planned_formal_certified"""
+formal_certified_st,algorithm,"""st"""
+formal_certified_st,formal_result,false
+formal_certified_st,training_seeds,"[1000, 1001, 1002]"
+formal_certified_st,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_certified_st,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_certified_st,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_certified_st,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_certified_st,independent_tuning_candidates,20
+formal_repetitions,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_repetitions,physical_file,"""physical_defaults.json"""
+formal_repetitions,mode,"""certified"""
+formal_repetitions,trace,"""regular"""
+formal_repetitions,horizon,500
+formal_repetitions,episodes,2500
+formal_repetitions,nodes,30
+formal_repetitions,buoys,3
+formal_repetitions,satellites,6
+formal_repetitions,services,20
+formal_repetitions,slot_s,10.0
+formal_repetitions,queue_capacity,8
+formal_repetitions,lt_intervals,"[5, 10, 15]"
+formal_repetitions,gamma,0.99
+formal_repetitions,gamma_st,0.99
+formal_repetitions,batch_lt,128
+formal_repetitions,batch_st,128
+formal_repetitions,replay,100000
+formal_repetitions,actor_lr,0.0001
+formal_repetitions,critic_lr,0.0003
+formal_repetitions,tr_lr,0.0003
+formal_repetitions,lr_min,1e-05
+formal_repetitions,lr_max,0.0003
+formal_repetitions,epsilon_eta,0.01
+formal_repetitions,tau,0.005
+formal_repetitions,rho,5.0
+formal_repetitions,prior_weights,"[0.3, 0.4, 0.3]"
+formal_repetitions,weights,"[0.5, 0.3, 0.2]"
+formal_repetitions,warmup,1000
+formal_repetitions,policy_delay,16
+formal_repetitions,exploration_sigma,0.1
+formal_repetitions,target_sigma,0.2
+formal_repetitions,target_clip,0.5
+formal_repetitions,grad_clip,1.0
+formal_repetitions,dqn_target_sync,200
+formal_repetitions,dqn_warmup,128
+formal_repetitions,hidden,"[256, 256]"
+formal_repetitions,history,4
+formal_repetitions,attention,64
+formal_repetitions,value_hidden,64
+formal_repetitions,head_temperature,2.0
+formal_repetitions,resource_init,1e-06
+formal_repetitions,other_init,0.001
+formal_repetitions,epsilon_start,1.0
+formal_repetitions,epsilon_end,0.05
+formal_repetitions,epsilon_decay_episodes,1000
+formal_repetitions,result_scope,"""planned_independent_training_repetitions"""
+formal_repetitions,algorithm,"""joint"""
+formal_repetitions,formal_result,false
+formal_repetitions,training_seeds,"[1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019]"
+formal_repetitions,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_repetitions,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_repetitions,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_repetitions,historical_paper_platform,"{""python"": ""3.9"", ""os"": ""Ubuntu 20.04"", ""cpu"": ""Xeon Silver 4210R"", ""gpu"": ""RTX 3090"", ""runtime_h"": 27.78}"
+formal_repetitions,independent_tuning_candidates,20
+formal_repetitions,seed_note,"""Supplementary independent training roots; distinct from explicit paper tuning train1000-1002/validation2000-2004/paired test0-19. Requires final protocol confirmation before launch."""
+formal_resource_only,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_resource_only,physical_file,"""physical_defaults.json"""
+formal_resource_only,mode,"""resource_only"""
+formal_resource_only,trace,"""regular"""
+formal_resource_only,horizon,500
+formal_resource_only,episodes,2500
+formal_resource_only,nodes,30
+formal_resource_only,buoys,3
+formal_resource_only,satellites,6
+formal_resource_only,services,20
+formal_resource_only,slot_s,10.0
+formal_resource_only,queue_capacity,8
+formal_resource_only,lt_intervals,"[5, 10, 15]"
+formal_resource_only,gamma,0.99
+formal_resource_only,gamma_st,0.99
+formal_resource_only,batch_lt,128
+formal_resource_only,batch_st,128
+formal_resource_only,replay,100000
+formal_resource_only,actor_lr,0.0001
+formal_resource_only,critic_lr,0.0003
+formal_resource_only,tr_lr,0.0003
+formal_resource_only,lr_min,1e-05
+formal_resource_only,lr_max,0.0003
+formal_resource_only,epsilon_eta,0.01
+formal_resource_only,tau,0.005
+formal_resource_only,rho,5.0
+formal_resource_only,prior_weights,"[0.3, 0.4, 0.3]"
+formal_resource_only,weights,"[0.5, 0.3, 0.2]"
+formal_resource_only,warmup,1000
+formal_resource_only,policy_delay,16
+formal_resource_only,exploration_sigma,0.1
+formal_resource_only,target_sigma,0.2
+formal_resource_only,target_clip,0.5
+formal_resource_only,grad_clip,1.0
+formal_resource_only,dqn_target_sync,200
+formal_resource_only,dqn_warmup,128
+formal_resource_only,hidden,"[256, 256]"
+formal_resource_only,history,4
+formal_resource_only,attention,64
+formal_resource_only,value_hidden,64
+formal_resource_only,head_temperature,2.0
+formal_resource_only,resource_init,1e-06
+formal_resource_only,other_init,0.001
+formal_resource_only,epsilon_start,1.0
+formal_resource_only,epsilon_end,0.05
+formal_resource_only,epsilon_decay_episodes,1000
+formal_resource_only,result_scope,"""planned_regular_soft_benchmark"""
+formal_resource_only,algorithm,"""joint"""
+formal_resource_only,formal_result,false
+formal_resource_only,training_seeds,"[1000, 1001, 1002]"
+formal_resource_only,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_resource_only,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_resource_only,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_resource_only_lt,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_resource_only_lt,physical_file,"""physical_defaults.json"""
+formal_resource_only_lt,mode,"""resource_only"""
+formal_resource_only_lt,trace,"""regular"""
+formal_resource_only_lt,horizon,500
+formal_resource_only_lt,episodes,2500
+formal_resource_only_lt,nodes,30
+formal_resource_only_lt,buoys,3
+formal_resource_only_lt,satellites,6
+formal_resource_only_lt,services,20
+formal_resource_only_lt,slot_s,10.0
+formal_resource_only_lt,queue_capacity,8
+formal_resource_only_lt,lt_intervals,"[5, 10, 15]"
+formal_resource_only_lt,gamma,0.99
+formal_resource_only_lt,gamma_st,0.99
+formal_resource_only_lt,batch_lt,128
+formal_resource_only_lt,batch_st,128
+formal_resource_only_lt,replay,100000
+formal_resource_only_lt,actor_lr,0.0001
+formal_resource_only_lt,critic_lr,0.0003
+formal_resource_only_lt,tr_lr,0.0003
+formal_resource_only_lt,lr_min,1e-05
+formal_resource_only_lt,lr_max,0.0003
+formal_resource_only_lt,epsilon_eta,0.01
+formal_resource_only_lt,tau,0.005
+formal_resource_only_lt,rho,5.0
+formal_resource_only_lt,prior_weights,"[0.3, 0.4, 0.3]"
+formal_resource_only_lt,weights,"[0.5, 0.3, 0.2]"
+formal_resource_only_lt,warmup,1000
+formal_resource_only_lt,policy_delay,16
+formal_resource_only_lt,exploration_sigma,0.1
+formal_resource_only_lt,target_sigma,0.2
+formal_resource_only_lt,target_clip,0.5
+formal_resource_only_lt,grad_clip,1.0
+formal_resource_only_lt,dqn_target_sync,200
+formal_resource_only_lt,dqn_warmup,128
+formal_resource_only_lt,hidden,"[256, 256]"
+formal_resource_only_lt,history,4
+formal_resource_only_lt,attention,64
+formal_resource_only_lt,value_hidden,64
+formal_resource_only_lt,head_temperature,2.0
+formal_resource_only_lt,resource_init,1e-06
+formal_resource_only_lt,other_init,0.001
+formal_resource_only_lt,epsilon_start,1.0
+formal_resource_only_lt,epsilon_end,0.05
+formal_resource_only_lt,epsilon_decay_episodes,1000
+formal_resource_only_lt,result_scope,"""planned_regular_soft_benchmark"""
+formal_resource_only_lt,algorithm,"""lt"""
+formal_resource_only_lt,formal_result,false
+formal_resource_only_lt,training_seeds,"[1000, 1001, 1002]"
+formal_resource_only_lt,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_resource_only_lt,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_resource_only_lt,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+formal_resource_only_st,science,"""tcom_4_0_fifo_certificate_v1"""
+formal_resource_only_st,physical_file,"""physical_defaults.json"""
+formal_resource_only_st,mode,"""resource_only"""
+formal_resource_only_st,trace,"""regular"""
+formal_resource_only_st,horizon,500
+formal_resource_only_st,episodes,2500
+formal_resource_only_st,nodes,30
+formal_resource_only_st,buoys,3
+formal_resource_only_st,satellites,6
+formal_resource_only_st,services,20
+formal_resource_only_st,slot_s,10.0
+formal_resource_only_st,queue_capacity,8
+formal_resource_only_st,lt_intervals,"[5, 10, 15]"
+formal_resource_only_st,gamma,0.99
+formal_resource_only_st,gamma_st,0.99
+formal_resource_only_st,batch_lt,128
+formal_resource_only_st,batch_st,128
+formal_resource_only_st,replay,100000
+formal_resource_only_st,actor_lr,0.0001
+formal_resource_only_st,critic_lr,0.0003
+formal_resource_only_st,tr_lr,0.0003
+formal_resource_only_st,lr_min,1e-05
+formal_resource_only_st,lr_max,0.0003
+formal_resource_only_st,epsilon_eta,0.01
+formal_resource_only_st,tau,0.005
+formal_resource_only_st,rho,5.0
+formal_resource_only_st,prior_weights,"[0.3, 0.4, 0.3]"
+formal_resource_only_st,weights,"[0.5, 0.3, 0.2]"
+formal_resource_only_st,warmup,1000
+formal_resource_only_st,policy_delay,16
+formal_resource_only_st,exploration_sigma,0.1
+formal_resource_only_st,target_sigma,0.2
+formal_resource_only_st,target_clip,0.5
+formal_resource_only_st,grad_clip,1.0
+formal_resource_only_st,dqn_target_sync,200
+formal_resource_only_st,dqn_warmup,128
+formal_resource_only_st,hidden,"[256, 256]"
+formal_resource_only_st,history,4
+formal_resource_only_st,attention,64
+formal_resource_only_st,value_hidden,64
+formal_resource_only_st,head_temperature,2.0
+formal_resource_only_st,resource_init,1e-06
+formal_resource_only_st,other_init,0.001
+formal_resource_only_st,epsilon_start,1.0
+formal_resource_only_st,epsilon_end,0.05
+formal_resource_only_st,epsilon_decay_episodes,1000
+formal_resource_only_st,result_scope,"""planned_regular_soft_benchmark"""
+formal_resource_only_st,algorithm,"""st"""
+formal_resource_only_st,formal_result,false
+formal_resource_only_st,training_seeds,"[1000, 1001, 1002]"
+formal_resource_only_st,evaluation_seeds,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+formal_resource_only_st,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+formal_resource_only_st,validation_seeds,"[2000, 2001, 2002, 2003, 2004]"
+physical_defaults,orbit,"{""type"": ""circular Walker"", ""altitude_m"": 1000000, ""inclination_deg"": 53, ""min_elevation_deg"": 10, ""planes"": 1, ""satellites_per_plane"": 6, ""walker_phase"": 0, ""earth_radius_m"": 6371000.0, ""earth_mu_m3_s2"": 398600441800000.0, ""earth_rotation_rad_s"": 7.292115e-05, ""origin_lat_deg"": 30.0, ""origin_lon_deg"": 120.0, ""epoch_utc"": ""2026-01-01T00:00:00Z"", ""earth_angle_at_epoch_rad"": 0.0, ""initial_phase"": ""satellite0_overhead_origin"", ""episode_phase"": ""reset_to_declared_epoch"", ""isl_neighbors"": ""adjacent_ring"", ""isl_max_distance_m"": 8000000.0, ""isl_earth_clearance_m"": 0.0, ""ground_station_offset_enu_m"": [-30000.0, 0.0, 0.0]}"
+physical_defaults,channels,"{""noise_psd_w_hz"": 4e-21, ""speed_of_light_m_s"": 299792458.0, ""probe_bandwidth"": ""full_pool_before_action"", ""snr_threshold_linear"": 1.0, ""rate_model"": ""shannon_equation_10"", ""probe_mask_use"": ""conservative_fixed_within_slot"", ""fade_refresh"": ""AR_correlated_edge_slot"", ""reciprocal_bn_isl"": true, ""optical"": {""max_distance_m"": 150, ""tx_power_w"": 1.0, ""aperture_m2"": 0.01, ""divergence_deg"": 10.0, ""cw_m_inv"": 0.05, ""bandwidth_hz"": 10000000.0, ""fading"": ""none""}, ""bn"": {""carrier_hz"": 1900000000.0, ""tx_gain_dbi"": 2.1, ""rx_gain_dbi"": 2.1, ""tx_power_w"": 2.0, ""bandwidth_hz"": 20000000.0, ""max_distance_m"": 600.0, ""extra_loss_db"": 0.0, ""rician_k_db"": 6.0, ""wave_block_probability"": 0.02, ""propagation"": ""friis_rician_block_surrogate""}, ""rf"": {""carrier_hz"": 20000000000.0, ""tx_power_w"": 10.0, ""tx_gain_dbi"": 38.0, ""rx_gain_dbi"": 38.0, ""bandwidth_hz"": 20000000.0, ""extra_loss_db"": 3.0, ""rician_k_db"": 10.0, ""nominal_outage_probability"": 0.0, ""propagation"": ""friis_rician_fixed_atmospheric_loss""}, ""isl"": {""carrier_hz"": 26000000000.0, ""tx_power_w"": 5.0, ""tx_gain_dbi"": 45.0, ""rx_gain_dbi"": 45.0, ""bandwidth_hz"": 100000000.0, ""extra_loss_db"": 2.0, ""propagation"": ""friis_fixed_loss""}, ""driver_ar"": 0.9, ""block_persistence"": 0.8, ""log_turbidity_noise"": 0.01}"
+physical_defaults,hardware,"{""bn"": {""cpu_hz"": 7500000000.0, ""storage_bits"": 24000000000.0}, ""leo"": {""cpu_hz"": 15000000000.0, ""storage_bits"": 48000000000.0}}"
+physical_defaults,services,"{""sizes_bits"": [3200000000, 3368421053, 3536842105, 3705263158, 3873684211, 4042105263, 4210526316, 4378947368, 4547368421, 4715789474, 4884210526, 5052631579, 5221052632, 5389473684, 5557894737, 5726315789, 5894736842, 6063157895, 6231578947, 6400000000]}"
+physical_defaults,thermal,"{""bn"": {""initial_c"": 40.0, ""idle_w"": 8.0, ""kappa"": 1e-28, ""rth_k_w"": 1.2, ""cth_j_k"": 200.0}, ""leo"": {""initial_c"": 45.0, ""idle_w"": 15.0, ""kappa"": 1e-28, ""rth_k_w"": 1.3, ""cth_j_k"": 400.0}}"
+physical_defaults,energy,"{""bn"": {""initial_j"": 500000.0, ""reserve_j"": 5000.0}, ""leo"": {""initial_j"": 1000000.0, ""reserve_j"": 10000.0}}"
+physical_defaults,costs,"{""beta_task_latency_per_s"": 0.5, ""beta_task_energy_per_j"": 0.1, ""beta_deployment_latency_per_s"": 0.008333333333333333, ""beta_deployment_energy_per_j"": 0.01, ""xref_task"": 9.069100535700018, ""xref_temperature"": 9.0, ""xref_deployment"": 1.8831967910928966}"
+physical_defaults,satellite_radiation,"{""radiator_capacity_j_k"": 1200.0, ""radiator_initial_c"": 20.0, ""emissivity"": 0.85, ""radiating_area_m2"": 0.6, ""solar_absorptivity"": 0.25, ""solar_area_m2"": 0.3, ""irradiance_w_m2"": 1361.0, ""earth_ir_w"": 40.0, ""albedo_w"": 30.0, ""background_k"": 3.0, ""sigma"": 5.670374419e-08, ""solar_phase_rad"": 0.0, ""solar_phase_rate_rad_s"": 1.991e-07, ""integration_max_step_s"": 0.5}"
+physical_defaults,deployment,"{""reserved_fraction"": 0.1, ""gateway_rate_bps"": 100000000.0, ""gateway_tx_w"": 10.0, ""gateway_rx_w"": 2.0, ""relay_buffer_bits"": 12800000000.0, ""write_rate_bps"": 100000000.0, ""write_energy_j_bit"": 1e-09}"
+physical_defaults,circuit,"{""optical"": {""tx_w"": 0.2, ""rx_w"": 0.2}, ""bn"": {""tx_w"": 0.2, ""rx_w"": 0.2}, ""rf"": {""tx_w"": 1.0, ""rx_w"": 1.0}, ""isl"": {""tx_w"": 1.0, ""rx_w"": 1.0}}"
+seed_roles,paper_tuning_training,"[1000, 1001, 1002]"
+seed_roles,paper_validation,"[2000, 2001, 2002, 2003, 2004]"
+seed_roles,paper_paired_test,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]"
+seed_roles,development_training,"[2000, 2001, 2002]"
+seed_roles,development_monitor,"[4000, 4001, 4002]"
+seed_roles,legacy_holdout,"[5000, 5001, 5002]"
+seed_roles,legacy_final_evaluation,"[6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009, 6010, 6011, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019]"
+seed_roles,supplementary_training_repetitions,"[1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019]"
+seed_roles,note,"""Roles are profile-specific. No global remap. Legacy holdout/final roots are not paper test roots."""
+smoke,science,"""tcom_4_0_fifo_certificate_v1"""
+smoke,physical_file,"""physical_defaults.json"""
+smoke,mode,"""certified"""
+smoke,trace,"""regular"""
+smoke,horizon,17
+smoke,episodes,2
+smoke,nodes,30
+smoke,buoys,3
+smoke,satellites,6
+smoke,services,20
+smoke,slot_s,10.0
+smoke,queue_capacity,8
+smoke,lt_intervals,"[5, 10, 15]"
+smoke,gamma,0.99
+smoke,gamma_st,0.99
+smoke,batch_lt,2
+smoke,batch_st,4
+smoke,replay,100000
+smoke,actor_lr,0.0001
+smoke,critic_lr,0.0003
+smoke,tr_lr,0.0003
+smoke,lr_min,1e-05
+smoke,lr_max,0.0003
+smoke,epsilon_eta,0.01
+smoke,tau,0.005
+smoke,rho,5.0
+smoke,prior_weights,"[0.3, 0.4, 0.3]"
+smoke,weights,"[0.5, 0.3, 0.2]"
+smoke,warmup,8
+smoke,policy_delay,2
+smoke,exploration_sigma,0.1
+smoke,target_sigma,0.2
+smoke,target_clip,0.5
+smoke,grad_clip,1.0
+smoke,dqn_target_sync,200
+smoke,dqn_warmup,2
+smoke,hidden,"[256, 256]"
+smoke,history,4
+smoke,attention,64
+smoke,value_hidden,64
+smoke,head_temperature,2.0
+smoke,resource_init,1e-06
+smoke,other_init,0.001
+smoke,epsilon_start,1.0
+smoke,epsilon_end,0.05
+smoke,epsilon_decay_episodes,1000
+smoke,result_scope,"""engineering_smoke"""
+smoke,algorithm,"""joint"""
+smoke,formal_result,false
+smoke,training_seeds,"[2000, 2001, 2002]"
+smoke,evaluation_seeds,"[4000, 4001, 4002]"
+smoke,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+smoke_lt,science,"""tcom_4_0_fifo_certificate_v1"""
+smoke_lt,physical_file,"""physical_defaults.json"""
+smoke_lt,mode,"""certified"""
+smoke_lt,trace,"""regular"""
+smoke_lt,horizon,17
+smoke_lt,episodes,2
+smoke_lt,nodes,30
+smoke_lt,buoys,3
+smoke_lt,satellites,6
+smoke_lt,services,20
+smoke_lt,slot_s,10.0
+smoke_lt,queue_capacity,8
+smoke_lt,lt_intervals,"[5, 10, 15]"
+smoke_lt,gamma,0.99
+smoke_lt,gamma_st,0.99
+smoke_lt,batch_lt,2
+smoke_lt,batch_st,4
+smoke_lt,replay,100000
+smoke_lt,actor_lr,0.0001
+smoke_lt,critic_lr,0.0003
+smoke_lt,tr_lr,0.0003
+smoke_lt,lr_min,1e-05
+smoke_lt,lr_max,0.0003
+smoke_lt,epsilon_eta,0.01
+smoke_lt,tau,0.005
+smoke_lt,rho,5.0
+smoke_lt,prior_weights,"[0.3, 0.4, 0.3]"
+smoke_lt,weights,"[0.5, 0.3, 0.2]"
+smoke_lt,warmup,8
+smoke_lt,policy_delay,2
+smoke_lt,exploration_sigma,0.1
+smoke_lt,target_sigma,0.2
+smoke_lt,target_clip,0.5
+smoke_lt,grad_clip,1.0
+smoke_lt,dqn_target_sync,200
+smoke_lt,dqn_warmup,2
+smoke_lt,hidden,"[256, 256]"
+smoke_lt,history,4
+smoke_lt,attention,64
+smoke_lt,value_hidden,64
+smoke_lt,head_temperature,2.0
+smoke_lt,resource_init,1e-06
+smoke_lt,other_init,0.001
+smoke_lt,epsilon_start,1.0
+smoke_lt,epsilon_end,0.05
+smoke_lt,epsilon_decay_episodes,1000
+smoke_lt,result_scope,"""engineering_smoke"""
+smoke_lt,algorithm,"""lt"""
+smoke_lt,formal_result,false
+smoke_lt,training_seeds,"[2000, 2001, 2002]"
+smoke_lt,evaluation_seeds,"[4000, 4001, 4002]"
+smoke_lt,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+smoke_st,science,"""tcom_4_0_fifo_certificate_v1"""
+smoke_st,physical_file,"""physical_defaults.json"""
+smoke_st,mode,"""certified"""
+smoke_st,trace,"""regular"""
+smoke_st,horizon,17
+smoke_st,episodes,2
+smoke_st,nodes,30
+smoke_st,buoys,3
+smoke_st,satellites,6
+smoke_st,services,20
+smoke_st,slot_s,10.0
+smoke_st,queue_capacity,8
+smoke_st,lt_intervals,"[5, 10, 15]"
+smoke_st,gamma,0.99
+smoke_st,gamma_st,0.99
+smoke_st,batch_lt,2
+smoke_st,batch_st,4
+smoke_st,replay,100000
+smoke_st,actor_lr,0.0001
+smoke_st,critic_lr,0.0003
+smoke_st,tr_lr,0.0003
+smoke_st,lr_min,1e-05
+smoke_st,lr_max,0.0003
+smoke_st,epsilon_eta,0.01
+smoke_st,tau,0.005
+smoke_st,rho,5.0
+smoke_st,prior_weights,"[0.3, 0.4, 0.3]"
+smoke_st,weights,"[0.5, 0.3, 0.2]"
+smoke_st,warmup,8
+smoke_st,policy_delay,2
+smoke_st,exploration_sigma,0.1
+smoke_st,target_sigma,0.2
+smoke_st,target_clip,0.5
+smoke_st,grad_clip,1.0
+smoke_st,dqn_target_sync,200
+smoke_st,dqn_warmup,2
+smoke_st,hidden,"[256, 256]"
+smoke_st,history,4
+smoke_st,attention,64
+smoke_st,value_hidden,64
+smoke_st,head_temperature,2.0
+smoke_st,resource_init,1e-06
+smoke_st,other_init,0.001
+smoke_st,epsilon_start,1.0
+smoke_st,epsilon_end,0.05
+smoke_st,epsilon_decay_episodes,1000
+smoke_st,result_scope,"""engineering_smoke"""
+smoke_st,algorithm,"""st"""
+smoke_st,formal_result,false
+smoke_st,training_seeds,"[2000, 2001, 2002]"
+smoke_st,evaluation_seeds,"[4000, 4001, 4002]"
+smoke_st,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""
+stochastic_smoke,science,"""tcom_4_0_fifo_certificate_v1"""
+stochastic_smoke,physical_file,"""physical_defaults.json"""
+stochastic_smoke,mode,"""certified"""
+stochastic_smoke,trace,"""stochastic_open"""
+stochastic_smoke,horizon,35
+stochastic_smoke,episodes,2
+stochastic_smoke,nodes,30
+stochastic_smoke,buoys,3
+stochastic_smoke,satellites,6
+stochastic_smoke,services,20
+stochastic_smoke,slot_s,10.0
+stochastic_smoke,queue_capacity,8
+stochastic_smoke,lt_intervals,"[5, 10, 15]"
+stochastic_smoke,gamma,0.99
+stochastic_smoke,gamma_st,0.99
+stochastic_smoke,batch_lt,2
+stochastic_smoke,batch_st,4
+stochastic_smoke,replay,100000
+stochastic_smoke,actor_lr,0.0001
+stochastic_smoke,critic_lr,0.0003
+stochastic_smoke,tr_lr,0.0003
+stochastic_smoke,lr_min,1e-05
+stochastic_smoke,lr_max,0.0003
+stochastic_smoke,epsilon_eta,0.01
+stochastic_smoke,tau,0.005
+stochastic_smoke,rho,5.0
+stochastic_smoke,prior_weights,"[0.3, 0.4, 0.3]"
+stochastic_smoke,weights,"[0.5, 0.3, 0.2]"
+stochastic_smoke,warmup,8
+stochastic_smoke,policy_delay,2
+stochastic_smoke,exploration_sigma,0.1
+stochastic_smoke,target_sigma,0.2
+stochastic_smoke,target_clip,0.5
+stochastic_smoke,grad_clip,1.0
+stochastic_smoke,dqn_target_sync,200
+stochastic_smoke,dqn_warmup,2
+stochastic_smoke,hidden,"[256, 256]"
+stochastic_smoke,history,4
+stochastic_smoke,attention,64
+stochastic_smoke,value_hidden,64
+stochastic_smoke,head_temperature,2.0
+stochastic_smoke,resource_init,1e-06
+stochastic_smoke,other_init,0.001
+stochastic_smoke,epsilon_start,1.0
+stochastic_smoke,epsilon_end,0.05
+stochastic_smoke,epsilon_decay_episodes,1000
+stochastic_smoke,result_scope,"""engineering_smoke"""
+stochastic_smoke,algorithm,"""joint"""
+stochastic_smoke,formal_result,false
+stochastic_smoke,training_seeds,"[2000, 2001, 2002]"
+stochastic_smoke,evaluation_seeds,"[4000, 4001, 4002]"
+stochastic_smoke,parameter_status,"""Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"""

@@ -1,0 +1,187 @@
+{
+  "tasks": {
+    "start": 0,
+    "end": 150,
+    "shape": [
+      30,
+      5
+    ]
+  },
+  "wait": {
+    "start": 150,
+    "end": 180,
+    "shape": [
+      30
+    ]
+  },
+  "present": {
+    "start": 180,
+    "end": 210,
+    "shape": [
+      30
+    ]
+  },
+  "target": {
+    "start": 210,
+    "end": 390,
+    "shape": [
+      9,
+      20
+    ]
+  },
+  "installed": {
+    "start": 390,
+    "end": 570,
+    "shape": [
+      9,
+      20
+    ]
+  },
+  "deployment_queue": {
+    "start": 570,
+    "end": 3810,
+    "shape": [
+      9,
+      20,
+      18
+    ]
+  },
+  "relay_occupancy": {
+    "start": 3810,
+    "end": 3819,
+    "shape": [
+      9
+    ]
+  },
+  "storage_remaining": {
+    "start": 3819,
+    "end": 3828,
+    "shape": [
+      9
+    ]
+  },
+  "links": {
+    "start": 3828,
+    "end": 11828,
+    "shape": [
+      40,
+      40,
+      5
+    ]
+  },
+  "theta": {
+    "start": 11828,
+    "end": 11837,
+    "shape": [
+      9
+    ]
+  },
+  "radiator": {
+    "start": 11837,
+    "end": 11843,
+    "shape": [
+      6
+    ]
+  },
+  "heat": {
+    "start": 11843,
+    "end": 11849,
+    "shape": [
+      6
+    ]
+  },
+  "ambient": {
+    "start": 11849,
+    "end": 11852,
+    "shape": [
+      3
+    ]
+  },
+  "energy": {
+    "start": 11852,
+    "end": 11861,
+    "shape": [
+      9
+    ]
+  },
+  "dep_energy": {
+    "start": 11861,
+    "end": 11870,
+    "shape": [
+      9
+    ]
+  },
+  "task_queues": {
+    "start": 11870,
+    "end": 13070,
+    "shape": [
+      30,
+      8,
+      5
+    ]
+  },
+  "exogenous": {
+    "start": 13070,
+    "end": 13502,
+    "shape": [
+      432
+    ]
+  },
+  "popularity": {
+    "start": 13502,
+    "end": 13522,
+    "shape": [
+      20
+    ]
+  },
+  "controller_history": {
+    "start": 13522,
+    "end": 13706,
+    "shape": [
+      4,
+      46
+    ]
+  },
+  "request_accumulator": {
+    "start": 13706,
+    "end": 13726,
+    "shape": [
+      20
+    ]
+  },
+  "link_accumulator": {
+    "start": 13726,
+    "end": 13730,
+    "shape": [
+      4
+    ]
+  },
+  "reward_accumulator": {
+    "start": 13730,
+    "end": 13731,
+    "shape": [
+      1
+    ]
+  },
+  "pre_drop": {
+    "start": 13731,
+    "end": 13761,
+    "shape": [
+      30
+    ]
+  },
+  "clock": {
+    "start": 13761,
+    "end": 13770,
+    "shape": [
+      9
+    ]
+  },
+  "discounted_controller_accumulator": {
+    "start": 13770,
+    "end": 13773,
+    "shape": [
+      3
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "science": "tcom_4_0_fifo_certificate_v1",
+  "mode": "certified",
+  "trace": "regular",
+  "horizon": 17,
+  "episodes": 2,
+  "nodes": 30,
+  "buoys": 3,
+  "satellites": 6,
+  "services": 20,
+  "slot_s": 10.0,
+  "queue_capacity": 8,
+  "lt_intervals": [
+    5,
+    10,
+    15
+  ],
+  "gamma": 0.99,
+  "gamma_st": 0.99,
+  "batch_lt": 2,
+  "batch_st": 4,
+  "replay": 100000,
+  "actor_lr": 0.0001,
+  "critic_lr": 0.0003,
+  "tr_lr": 0.0003,
+  "lr_min": 1e-05,
+  "lr_max": 0.0003,
+  "epsilon_eta": 0.01,
+  "tau": 0.005,
+  "rho": 5.0,
+  "prior_weights": [
+    0.3,
+    0.4,
+    0.3
+  ],
+  "weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "warmup": 8,
+  "policy_delay": 2,
+  "exploration_sigma": 0.1,
+  "target_sigma": 0.2,
+  "target_clip": 0.5,
+  "grad_clip": 1.0,
+  "dqn_target_sync": 200,
+  "dqn_warmup": 2,
+  "hidden": [
+    256,
+    256
+  ],
+  "history": 4,
+  "attention": 64,
+  "value_hidden": 64,
+  "head_temperature": 2.0,
+  "resource_init": 1e-06,
+  "other_init": 0.001,
+  "epsilon_start": 1.0,
+  "epsilon_end": 0.05,
+  "epsilon_decay_episodes": 1000,
+  "result_scope": "engineering_smoke",
+  "algorithm": "joint",
+  "formal_result": false,
+  "training_seeds": [
+    2000,
+    2001,
+    2002
+  ],
+  "evaluation_seeds": [
+    4000,
+    4001,
+    4002
+  ],
+  "parameter_status": "Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated",
+  "physical": {
+    "orbit": {
+      "type": "circular Walker",
+      "altitude_m": 1000000,
+      "inclination_deg": 53,
+      "min_elevation_deg": 10,
+      "planes": 1,
+      "satellites_per_plane": 6,
+      "walker_phase": 0,
+      "earth_radius_m": 6371000.0,
+      "earth_mu_m3_s2": 398600441800000.0,
+      "earth_rotation_rad_s": 7.292115e-05,
+      "origin_lat_deg": 30.0,
+      "origin_lon_deg": 120.0,
+      "epoch_utc": "2026-01-01T00:00:00Z",
+      "earth_angle_at_epoch_rad": 0.0,
+      "initial_phase": "satellite0_overhead_origin",
+      "episode_phase": "reset_to_declared_epoch",
+      "isl_neighbors": "adjacent_ring",
+      "isl_max_distance_m": 8000000.0,
+      "isl_earth_clearance_m": 0.0,
+      "ground_station_offset_enu_m": [
+        -30000.0,
+        0.0,
+        0.0
+      ]
+    },
+    "channels": {
+      "noise_psd_w_hz": 4e-21,
+      "speed_of_light_m_s": 299792458.0,
+      "probe_bandwidth": "full_pool_before_action",
+      "snr_threshold_linear": 1.0,
+      "rate_model": "shannon_equation_10",
+      "probe_mask_use": "conservative_fixed_within_slot",
+      "fade_refresh": "AR_correlated_edge_slot",
+      "reciprocal_bn_isl": true,
+      "optical": {
+        "max_distance_m": 150,
+        "tx_power_w": 1.0,
+        "aperture_m2": 0.01,
+        "divergence_deg": 10.0,
+        "cw_m_inv": 0.05,
+        "bandwidth_hz": 10000000.0,
+        "fading": "none"
+      },
+      "bn": {
+        "carrier_hz": 1900000000.0,
+        "tx_gain_dbi": 2.1,
+        "rx_gain_dbi": 2.1,
+        "tx_power_w": 2.0,
+        "bandwidth_hz": 20000000.0,
+        "max_distance_m": 600.0,
+        "extra_loss_db": 0.0,
+        "rician_k_db": 6.0,
+        "wave_block_probability": 0.02,
+        "propagation": "friis_rician_block_surrogate"
+      },
+      "rf": {
+        "carrier_hz": 20000000000.0,
+        "tx_power_w": 10.0,
+        "tx_gain_dbi": 38.0,
+        "rx_gain_dbi": 38.0,
+        "bandwidth_hz": 20000000.0,
+        "extra_loss_db": 3.0,
+        "rician_k_db": 10.0,
+        "nominal_outage_probability": 0.0,
+        "propagation": "friis_rician_fixed_atmospheric_loss"
+      },
+      "isl": {
+        "carrier_hz": 26000000000.0,
+        "tx_power_w": 5.0,
+        "tx_gain_dbi": 45.0,
+        "rx_gain_dbi": 45.0,
+        "bandwidth_hz": 100000000.0,
+        "extra_loss_db": 2.0,
+        "propagation": "friis_fixed_loss"
+      },
+      "driver_ar": 0.9,
+      "block_persistence": 0.8,
+      "log_turbidity_noise": 0.01
+    },
+    "hardware": {
+      "bn": {
+        "cpu_hz": 7500000000.0,
+        "storage_bits": 24000000000.0
+      },
+      "leo": {
+        "cpu_hz": 15000000000.0,
+        "storage_bits": 48000000000.0
+      }
+    },
+    "services": {
+      "sizes_bits": [
+        3200000000,
+        3368421053,
+        3536842105,
+        3705263158,
+        3873684211,
+        4042105263,
+        4210526316,
+        4378947368,
+        4547368421,
+        4715789474,
+        4884210526,
+        5052631579,
+        5221052632,
+        5389473684,
+        5557894737,
+        5726315789,
+        5894736842,
+        6063157895,
+        6231578947,
+        6400000000
+      ]
+    },
+    "thermal": {
+      "bn": {
+        "initial_c": 40.0,
+        "idle_w": 8.0,
+        "kappa": 1e-28,
+        "rth_k_w": 1.2,
+        "cth_j_k": 200.0
+      },
+      "leo": {
+        "initial_c": 45.0,
+        "idle_w": 15.0,
+        "kappa": 1e-28,
+        "rth_k_w": 1.3,
+        "cth_j_k": 400.0
+      }
+    },
+    "energy": {
+      "bn": {
+        "initial_j": 500000.0,
+        "reserve_j": 5000.0
+      },
+      "leo": {
+        "initial_j": 1000000.0,
+        "reserve_j": 10000.0
+      }
+    },
+    "costs": {
+      "beta_task_latency_per_s": 0.5,
+      "beta_task_energy_per_j": 0.1,
+      "beta_deployment_latency_per_s": 0.008333333333333333,
+      "beta_deployment_energy_per_j": 0.01,
+      "xref_task": 9.069100535700018,
+      "xref_temperature": 9.0,
+      "xref_deployment": 1.8831967910928966
+    },
+    "satellite_radiation": {
+      "radiator_capacity_j_k": 1200.0,
+      "radiator_initial_c": 20.0,
+      "emissivity": 0.85,
+      "radiating_area_m2": 0.6,
+      "solar_absorptivity": 0.25,
+      "solar_area_m2": 0.3,
+      "irradiance_w_m2": 1361.0,
+      "earth_ir_w": 40.0,
+      "albedo_w": 30.0,
+      "background_k": 3.0,
+      "sigma": 5.670374419e-08,
+      "solar_phase_rad": 0.0,
+      "solar_phase_rate_rad_s": 1.991e-07,
+      "integration_max_step_s": 0.5
+    },
+    "deployment": {
+      "reserved_fraction": 0.1,
+      "gateway_rate_bps": 100000000.0,
+      "gateway_tx_w": 10.0,
+      "gateway_rx_w": 2.0,
+      "relay_buffer_bits": 12800000000.0,
+      "write_rate_bps": 100000000.0,
+      "write_energy_j_bit": 1e-09
+    },
+    "circuit": {
+      "optical": {
+        "tx_w": 0.2,
+        "rx_w": 0.2
+      },
+      "bn": {
+        "tx_w": 0.2,
+        "rx_w": 0.2
+      },
+      "rf": {
+        "tx_w": 1.0,
+        "rx_w": 1.0
+      },
+      "isl": {
+        "tx_w": 1.0,
+        "rx_w": 1.0
+      }
+    }
+  }
+}

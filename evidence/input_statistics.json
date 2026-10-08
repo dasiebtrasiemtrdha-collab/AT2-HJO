@@ -1,0 +1,445 @@
+{
+  "scope": "current input validation; not historical-table reproduction",
+  "episode": 0,
+  "nodes": 30,
+  "slots": 500,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "sd": "sample SD of 20 per-seed statistics (ddof=1)",
+  "traces": {
+    "regular": {
+      "input_identity": "d25e76d002a4c372473d2bceaace173bd5799ad523dce854df95166ec875be33",
+      "rows": [
+        {
+          "seed": 0,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 1,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 2,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 3,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 4,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 5,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 6,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 7,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 8,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 9,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 10,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 11,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 12,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 13,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 14,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 15,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 16,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 17,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 18,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        },
+        {
+          "seed": 19,
+          "in_area_node_slots": 15000,
+          "requests_per_in_area_node_slot": 1.0,
+          "zero_arrival_percent": 0.0,
+          "multiple_arrival_percent": 0.0,
+          "exits": 0,
+          "reentries": 0
+        }
+      ],
+      "summary": {
+        "requests_per_in_area_node_slot": {
+          "mean": 1.0,
+          "sd": 0.0
+        },
+        "zero_arrival_percent": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "multiple_arrival_percent": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "exits": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "reentries": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      }
+    },
+    "stochastic_open": {
+      "input_identity": "621f240ec2602ae8fe315840c05c486aab109d5942ac01b467a1f34be4fbeb22",
+      "rows": [
+        {
+          "seed": 0,
+          "in_area_node_slots": 10571,
+          "requests_per_in_area_node_slot": 1.0012297795856588,
+          "zero_arrival_percent": 49.493898401286536,
+          "multiple_arrival_percent": 23.280673540819222,
+          "exits": 235,
+          "reentries": 221
+        },
+        {
+          "seed": 1,
+          "in_area_node_slots": 10214,
+          "requests_per_in_area_node_slot": 1.0208537301742706,
+          "zero_arrival_percent": 48.590170354415505,
+          "multiple_arrival_percent": 24.153123164284317,
+          "exits": 264,
+          "reentries": 250
+        },
+        {
+          "seed": 2,
+          "in_area_node_slots": 10848,
+          "requests_per_in_area_node_slot": 1.0211098820058997,
+          "zero_arrival_percent": 48.97676991150443,
+          "multiple_arrival_percent": 24.124262536873157,
+          "exits": 216,
+          "reentries": 207
+        },
+        {
+          "seed": 3,
+          "in_area_node_slots": 11203,
+          "requests_per_in_area_node_slot": 0.9913416049272517,
+          "zero_arrival_percent": 50.06694635365527,
+          "multiple_arrival_percent": 22.806391145228957,
+          "exits": 213,
+          "reentries": 208
+        },
+        {
+          "seed": 4,
+          "in_area_node_slots": 10806,
+          "requests_per_in_area_node_slot": 0.9975013881177124,
+          "zero_arrival_percent": 49.398482324634465,
+          "multiple_arrival_percent": 23.292615213770127,
+          "exits": 234,
+          "reentries": 219
+        },
+        {
+          "seed": 5,
+          "in_area_node_slots": 10709,
+          "requests_per_in_area_node_slot": 0.9801101876925951,
+          "zero_arrival_percent": 50.03268279017649,
+          "multiple_arrival_percent": 22.92464282379307,
+          "exits": 214,
+          "reentries": 202
+        },
+        {
+          "seed": 6,
+          "in_area_node_slots": 11061,
+          "requests_per_in_area_node_slot": 0.9810143748304855,
+          "zero_arrival_percent": 49.83274568303047,
+          "multiple_arrival_percent": 23.23478889792966,
+          "exits": 211,
+          "reentries": 196
+        },
+        {
+          "seed": 7,
+          "in_area_node_slots": 10943,
+          "requests_per_in_area_node_slot": 0.981540710956776,
+          "zero_arrival_percent": 49.91318651192543,
+          "multiple_arrival_percent": 22.79996344695239,
+          "exits": 216,
+          "reentries": 203
+        },
+        {
+          "seed": 8,
+          "in_area_node_slots": 10875,
+          "requests_per_in_area_node_slot": 0.9922758620689656,
+          "zero_arrival_percent": 49.793103448275865,
+          "multiple_arrival_percent": 23.126436781609197,
+          "exits": 227,
+          "reentries": 219
+        },
+        {
+          "seed": 9,
+          "in_area_node_slots": 10331,
+          "requests_per_in_area_node_slot": 1.0010647565579325,
+          "zero_arrival_percent": 48.930403639531505,
+          "multiple_arrival_percent": 22.86322718033104,
+          "exits": 238,
+          "reentries": 225
+        },
+        {
+          "seed": 10,
+          "in_area_node_slots": 10865,
+          "requests_per_in_area_node_slot": 1.0208927749654855,
+          "zero_arrival_percent": 48.12701334560516,
+          "multiple_arrival_percent": 23.920846755637367,
+          "exits": 216,
+          "reentries": 204
+        },
+        {
+          "seed": 11,
+          "in_area_node_slots": 10806,
+          "requests_per_in_area_node_slot": 1.0218397186748103,
+          "zero_arrival_percent": 49.046825837497686,
+          "multiple_arrival_percent": 24.060707014621507,
+          "exits": 224,
+          "reentries": 215
+        },
+        {
+          "seed": 12,
+          "in_area_node_slots": 11319,
+          "requests_per_in_area_node_slot": 1.02367700326884,
+          "zero_arrival_percent": 49.01493064758371,
+          "multiple_arrival_percent": 24.101068999028183,
+          "exits": 201,
+          "reentries": 194
+        },
+        {
+          "seed": 13,
+          "in_area_node_slots": 10818,
+          "requests_per_in_area_node_slot": 0.9626548345350342,
+          "zero_arrival_percent": 50.83194675540766,
+          "multiple_arrival_percent": 22.203734516546497,
+          "exits": 227,
+          "reentries": 218
+        },
+        {
+          "seed": 14,
+          "in_area_node_slots": 10910,
+          "requests_per_in_area_node_slot": 1.0186067827681027,
+          "zero_arrival_percent": 48.982584784601286,
+          "multiple_arrival_percent": 23.629697525206232,
+          "exits": 221,
+          "reentries": 213
+        },
+        {
+          "seed": 15,
+          "in_area_node_slots": 10955,
+          "requests_per_in_area_node_slot": 1.018073938840712,
+          "zero_arrival_percent": 48.96394340483798,
+          "multiple_arrival_percent": 23.925148334094022,
+          "exits": 216,
+          "reentries": 207
+        },
+        {
+          "seed": 16,
+          "in_area_node_slots": 10707,
+          "requests_per_in_area_node_slot": 0.9749696460259644,
+          "zero_arrival_percent": 50.705146166059585,
+          "multiple_arrival_percent": 22.73279163164285,
+          "exits": 237,
+          "reentries": 222
+        },
+        {
+          "seed": 17,
+          "in_area_node_slots": 10655,
+          "requests_per_in_area_node_slot": 0.9502580947911778,
+          "zero_arrival_percent": 50.08916001877053,
+          "multiple_arrival_percent": 22.083528859690286,
+          "exits": 225,
+          "reentries": 217
+        },
+        {
+          "seed": 18,
+          "in_area_node_slots": 10622,
+          "requests_per_in_area_node_slot": 0.9423837318772359,
+          "zero_arrival_percent": 49.99058557710412,
+          "multiple_arrival_percent": 21.577857277348897,
+          "exits": 221,
+          "reentries": 207
+        },
+        {
+          "seed": 19,
+          "in_area_node_slots": 11066,
+          "requests_per_in_area_node_slot": 1.036237122718236,
+          "zero_arrival_percent": 48.761973612868246,
+          "multiple_arrival_percent": 23.820712091089824,
+          "exits": 239,
+          "reentries": 225
+        }
+      ],
+      "summary": {
+        "requests_per_in_area_node_slot": {
+          "mean": 0.9968817962691574,
+          "sd": 0.026359385126846647
+        },
+        "zero_arrival_percent": {
+          "mean": 49.47712497843859,
+          "sd": 0.7122300689536117
+        },
+        "multiple_arrival_percent": {
+          "mean": 23.23311088682484,
+          "sd": 0.7442229997507546
+        },
+        "exits": {
+          "mean": 224.75,
+          "sd": 13.787389356334211
+        },
+        "reentries": {
+          "mean": 213.6,
+          "sd": 12.558913798154427
+        }
+      }
+    }
+  }
+}

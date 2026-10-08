@@ -1,0 +1,77 @@
+{
+  "science": "tcom_4_0_fifo_certificate_v1",
+  "physical_file": "physical_defaults.json",
+  "mode": "certified",
+  "trace": "regular",
+  "horizon": 200,
+  "episodes": 100,
+  "nodes": 30,
+  "buoys": 3,
+  "satellites": 6,
+  "services": 20,
+  "slot_s": 10.0,
+  "queue_capacity": 8,
+  "lt_intervals": [
+    5,
+    10,
+    15
+  ],
+  "gamma": 0.99,
+  "gamma_st": 0.99,
+  "batch_lt": 128,
+  "batch_st": 128,
+  "replay": 100000,
+  "actor_lr": 0.0001,
+  "critic_lr": 0.0003,
+  "tr_lr": 0.0003,
+  "lr_min": 1e-05,
+  "lr_max": 0.0003,
+  "epsilon_eta": 0.01,
+  "tau": 0.005,
+  "rho": 5.0,
+  "prior_weights": [
+    0.3,
+    0.4,
+    0.3
+  ],
+  "weights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "warmup": 1000,
+  "policy_delay": 16,
+  "exploration_sigma": 0.1,
+  "target_sigma": 0.2,
+  "target_clip": 0.5,
+  "grad_clip": 1.0,
+  "dqn_target_sync": 200,
+  "dqn_warmup": 128,
+  "hidden": [
+    256,
+    256
+  ],
+  "history": 4,
+  "attention": 64,
+  "value_hidden": 64,
+  "head_temperature": 2.0,
+  "resource_init": 1e-06,
+  "other_init": 0.001,
+  "epsilon_start": 1.0,
+  "epsilon_end": 0.05,
+  "epsilon_decay_episodes": 1000,
+  "result_scope": "development",
+  "algorithm": "st",
+  "formal_result": false,
+  "training_seeds": [
+    2000,
+    2001,
+    2002
+  ],
+  "evaluation_seeds": [
+    4000,
+    4001,
+    4002
+  ],
+  "parameter_status": "Core parameters cross-checked with manuscript 4.5; formal numerical results not revalidated"
+}

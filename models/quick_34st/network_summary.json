@@ -1,0 +1,51 @@
+{
+  "state_dim_lt": 13773,
+  "state_dim_st": 13773,
+  "state_dim_tr_boundary": 13772,
+  "action_heads": [
+    "schedule",
+    "cpu",
+    "uowc",
+    "rf"
+  ],
+  "action_slices": [
+    0,
+    270,
+    540,
+    630,
+    648
+  ],
+  "action_dim": 648,
+  "context_dim": 46,
+  "tr_policy_input": "full boundary without interval + last attention row",
+  "tr_value_input": "full boundary without interval + flattened complete history",
+  "hidden": [
+    256,
+    256
+  ],
+  "value_hidden": 64,
+  "history": 4,
+  "attention": 64,
+  "activation": "ReLU; schedule 5*tanh; resources tanh(h/2.0)",
+  "initialization": {
+    "hidden": "Kaiming uniform",
+    "actor_resource_output": 1e-06,
+    "other_output": 0.001,
+    "attention": "Xavier uniform",
+    "bias": "zero"
+  },
+  "parameters": {
+    "actor": 3758472,
+    "q1": 3758081,
+    "q2": 3758081,
+    "lt": 3638273,
+    "tr": 50343,
+    "value": 893313,
+    "actor_target": 3758472,
+    "q1_target": 3758081,
+    "q2_target": 3758081,
+    "lt_target": 3638273
+  },
+  "total_parameters": 30769470,
+  "checkpoint_compatibility": "revision4-learning-v2 only; pre-fix TR shapes and shared-replay checkpoints are incompatible"
+}
