@@ -1,6 +1,6 @@
 # Core implementation release
 
-This core release provides the AT2-HJO implementation accompanying revised manuscript 4.5: the native simulator, improved DQN, improved TD3, attention-based timescale regulator, network definitions, training/evaluation/recovery scripts, parameter configurations, random seeds, synthetic input generators, and executable examples.
+This core release provides the AT2-HJO implementation accompanying revised manuscript: the native simulator, improved DQN, improved TD3, attention-based timescale regulator, network definitions, training/evaluation/recovery scripts, parameter configurations, random seeds, synthetic input generators, and executable examples.
 
 The core includes general training and evaluation interfaces and M10/M20/M30 profiles. Experiment-specific runners for timing/scaling, unseen-scenario adaptation, ablation studies, training-interaction analysis, and external comparison methods are not included in this release. `EXPERIMENT_MAP.csv` identifies the available interfaces and the scope of each experiment family.
 

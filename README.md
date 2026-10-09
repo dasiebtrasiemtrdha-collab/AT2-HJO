@@ -1,6 +1,6 @@
 # AT2-HJO core implementation
 
-Core implementation accompanying **Thermal-Aware Adaptive Two-Timescale Service Deployment and Task Scheduling in Buoy-Satellite Cooperative Marine Edge Computing Networks** (TCOM-TPS-26-1840, revised manuscript 4.5).
+Core implementation accompanying **Thermal-Aware Adaptive Two-Timescale Service Deployment and Task Scheduling in Buoy-Satellite Cooperative Marine Edge Computing Networks** (TCOM-TPS-26-1840, revised manuscript).
 
 Software **4.0.2-public**; simulator/state identity `tcom_4_0_fifo_certificate_v1`.
 
@@ -97,7 +97,7 @@ MLPs use 256-256 ReLU. TD3 has scheduling/CPU/UOWC/RF heads, twin critics and ta
 
 Formal defaults: actorLR1e-4, critic/regulatorLR3e-4, DQN range[1e-5,3e-4], batch128, replay100000, gamma.99, tau.005, rho5, weights(.5,.3,.2). Execution includes persistent queues/transfers, executed-action critics, continuous-only target smoothing, actual-duration SMDP discount and terminal masks. Resource logits use `tanh(h/2)`; `head_temperature=2` is the divisor, not a softmax temperature.
 
-`resource_only` is the regular-load projected-action soft-constraint benchmark. `certified` adds joint hard execution checks. The quick example uses certified mode; profile JSON files explicitly identify their execution mode.
+In `certified` mode, the ST reward contains the operating-cost terms without a proposal penalty; `rho` weights the actor auxiliary regularizer. In `resource_only` mode, the ST reward additionally subtracts `rho * proposal_phi`, and the same actor regularizer is retained. The quick example uses certified mode; each profile declares its execution mode.
 
 ```bash
 python -m at2hjo.cli train --config configs/revision4/formal_resource_only.json --seed 1000 --device auto --output runs/formal_soft1000

@@ -1,15 +1,15 @@
 {
   "software": "4.0.2-public",
   "science": "tcom_4_0_fifo_certificate_v1",
-  "manuscript_revision": "4.5",
   "release_scope": "AT2-HJO core implementation and 34-ST functional example",
   "prepared_date": "2026-10-09",
   "model_asset": "AT2HJO_QuickModels_34ST_4.0.2.zip",
-  "source_asset": "AT2HJO_GitHub_Source_4.0.2_docs1.zip",
+  "source_asset": "AT2HJO_GitHub_Source_4.0.2_docs2.zip",
   "project_license": "not selected",
-  "documentation_revision": "docs.1",
-  "release_tag": "v4.0.2-docs.1",
+  "documentation_revision": "docs.2",
+  "release_tag": "v4.0.2-docs.2",
   "verification_scope": "Short CPU/CUDA training, evaluation and recovery; full-scale result artifacts are outside this core release",
   "repository_url": "https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO",
-  "model_asset_url": "https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO/releases/download/v4.0.2/AT2HJO_QuickModels_34ST_4.0.2.zip"
+  "model_asset_url": "https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO/releases/download/v4.0.2/AT2HJO_QuickModels_34ST_4.0.2.zip",
+  "manuscript": "revised manuscript"
 }

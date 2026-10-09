@@ -1,8 +1,8 @@
 # Parameter and architecture crosswalk
 
-Target: supplied TCOM_Revised_4_5.zip, main.tex SectionV-B and network/algorithm definitions. The table distinguishes normal training parameters and the quick functional profile.
+Reference: the revised manuscript and the released network/algorithm definitions. The table compares the normal training parameters with the quick functional profile.
 
-| Parameter | Manuscript4.5 / formal profile | Functional model |
+| Parameter | Revised manuscript / formal profile | Functional model |
 |---|---|---|
 | Actor LR | 1e-4 | same |
 | Critic/regulator LR | 3e-4 / 3e-4 | same |
@@ -18,7 +18,21 @@ Target: supplied TCOM_Revised_4_5.zip, main.tex SectionV-B and network/algorithm
 | Mode | Figures: resource_only; checks: certified | certified |
 | M/B/S/K | 10-30/3/6/20 | 30/3/6/20 |
 
-The final actorLR1e-4 agrees with the formal configuration. LT learning-rate sensitivity and the separate ST actor LR are distinct parameters.
+The formal actor and critic learning rates are 1e-4 and 3e-4, respectively. LT learning-rate sensitivity and the ST actor learning rate are distinct parameters.
+
+## Formula references
+
+| Formula | LaTeX label in the revised manuscript | Equation | Released implementation |
+|---|---|---|---|
+| General link SNR, for positive bandwidth | `eq:general_snr` | (2) | `communications/channels.py`: `snr`; source comment Eq(1) |
+| UOWC channel gain | `eq:uowc_gain` | (4) | `communications/channels.py`: `optical_gain`; source comment Eq(3) |
+| Link rate with availability and zero-bandwidth handling | `eq:general_rate` | (11) | `communications/channels.py`: `shannon_rate`; source comment Eq(10), stored `rate_model=shannon_equation_10` |
+| Adaptive LT learning rate | `eq:adaptive_learning_rate` | (47) | `revision4/learning.py`: `Learner.dqn_update`; source comment Eq(45)-(46) |
+| LT parameter update and periodic target synchronization | `eq:lt_parameter_update` | (48) | `revision4/learning.py`: `Learner.dqn_update`; source comment Eq(45)-(46) |
+
+Source comments and stored configuration identifiers retain their release-time numbering. The labels above identify the corresponding formulas in the revised manuscript.
+
+In `certified` mode, the ST reward contains the operating-cost terms without a proposal penalty; `rho` weights the actor auxiliary regularizer. In `resource_only` mode, the ST reward additionally subtracts `rho * proposal_phi`, and the same actor regularizer is retained. The quick example uses certified mode; each profile declares its execution mode.
 
 Scheduling uses5*tanh(h); resource heads use tanh(h/2), then mask/project. head_temperature=2 is the resource divisor, not softmax temperature. Network summaries include DQN, actor, twin/target critics, attention policy and value critic with full state/action slices.
 

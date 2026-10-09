@@ -1,6 +1,6 @@
 # Citation
 
-Shuai Liu et al., *Thermal-Aware Adaptive Two-Timescale Service Deployment and Task Scheduling in Buoy-Satellite Cooperative Marine Edge Computing Networks*, revised manuscript 4.5, TCOM-TPS-26-1840 (under review).
+Shuai Liu et al., *Thermal-Aware Adaptive Two-Timescale Service Deployment and Task Scheduling in Buoy-Satellite Cooperative Marine Edge Computing Networks*, revised manuscript, TCOM-TPS-26-1840 (under review).
 
 Software: AT2-HJO public core **4.0.2-public**; simulator/state identity `tcom_4_0_fifo_certificate_v1`.
 
