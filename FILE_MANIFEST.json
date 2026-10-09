@@ -3,13 +3,13 @@
   "software": "4.0.2-public",
   "files": {
     ".gitignore": "2ceea3ea6bac9750c2241ae055936a3f00071d2af0cdcb87a4228abd77fa29e5",
-    "BASELINE_SCOPE.json": "d6a827e9c70ff66e925f5212ea16d75684d87f35501c6af19e7da1b4a60fe348",
-    "CITATION.md": "ee4e709121c4e3ca46a6758a47800fb2441d18ccbf193e561cdf12f2cc29fa7e",
-    "EXPERIMENT_MAP.csv": "18239aeb045718e850099b71d2a941e3f09a6c3c35ac852a2c36bf05b3fc08e7",
+    "BASELINE_SCOPE.json": "9e728f6c6f571d6ab3663df3a020fc4de94f66944326e441c188f9074cb3d6c7",
+    "CITATION.md": "3a6ca06c046a106bd99907ee8ec8e10b8a6670907159a877c93bc6dea2081a82",
+    "EXPERIMENT_MAP.csv": "c481c049a029cd5f3fbe5c4a8e9664c06faec2016d8925b843e3ec3480e3acb1",
     "LICENSE_STATUS.md": "848c1d2929036bd8d6470ca004434ce37685c52075a2915f41978194c6ed6af4",
     "PARAMETERS.csv": "9123ee86610241934ccddd5c09375d5a8b17ee9b039ebe6d164eb80aa18380f6",
-    "PUBLIC_RELEASE.json": "2af04466049e8c6934e32b9ccf604febbceb1a0fb40fe3c9873ed2ef37558598",
-    "README.md": "e611cfe5c27227a114b2bc534a5b4249a82178e55090953e8d03ecf436333180",
+    "PUBLIC_RELEASE.json": "e6e036cbfc454fb2e5a03d58831009f988340346b3e7d088086fdc79e831e53f",
+    "README.md": "a8cf0f57f0f65f3afca945c8e075207c271bc6b77f01342435c3bfbc2d8c25fb",
     "RELEASE_VERSION": "7495cbe7f1498fa4d475fec21b7def377b7650c9ac8432228d7e361a94cb225c",
     "SCIENTIFIC_SPEC_VERSION": "c7a75282215d937ffc5158e19785604ea6fd17b54e76ae7185ac09d77e652c9f",
     "SOURCE_MANIFEST.json": "8c095b08f3868f1a007ddb610313daad51b928bedb2c32e6e21c6c987d6ca15d",
@@ -39,9 +39,9 @@
     "data/example_open/manifest.json": "96c17852d5cef286cbd2ce330cfb2863b86a09b771224830fbc1e7e6a225fb03",
     "data/example_open/requests.jsonl": "2ba5c301632ebfacded11a60a61d6a230319513eee78748080f42ee7b22f5bf6",
     "data/example_open/trace.npz": "8942e3eafb9b79b72773cf26b39add716a5d059695a7ca0e606441f343b904ac",
-    "docs/GPU_VERIFICATION.md": "1989e0ec30343ae4248d3378ba9a186d1d9d93c3416c40f91a1fd00506bbe791",
+    "docs/GPU_VERIFICATION.md": "24b82a41532562155663d93a9e189da67d3a655535880bf6a8d85b92f9650a6c",
     "docs/PARAMETER_CROSSWALK.md": "65b107b904cd2ca8dfe79170acce5c2bd2aecef53b3060ffe4f4250d346b0698",
-    "docs/RELEASE_SCOPE.md": "39ffd348ef5e9969fbd1ef103132b7a16b34b59c321430936f63f34d082009ae",
+    "docs/RELEASE_SCOPE.md": "720f931b47399e96fbcd3f79c88127737dcfe79abb184a0266e7adbf9464c210",
     "evidence/VERIFICATION.json": "0bb8c888a6f3cf2e9715a42c6f16094fc5efb448a4497a40b28bd68aafa63966",
     "evidence/dataset_checks.json": "537426cb559e01964b9e583ccd54aadfa48a60e1397133f20b458c2b1d698113",
     "evidence/evaluation_check.json": "c7ba5c3faa080dc8c3c1a458fdd4bc7278aa6b4f9f4c6747db9f6aade06c7a23",
@@ -192,5 +192,6 @@
     "third_party/licenses/wheel-0.45.1/wheel/vendored/packaging/LICENSE.APACHE": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
     "third_party/licenses/wheel-0.45.1/wheel/vendored/packaging/LICENSE.BSD": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
     "wheels/at2hjo-4.0.2-py3-none-any.whl": "3acc9d87fd8678415b2273844a869d64f18cac10ab6ab25c79f564152e60edbb"
-  }
+  },
+  "documentation_revision": "docs.1"
 }

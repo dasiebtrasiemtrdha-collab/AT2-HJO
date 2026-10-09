@@ -67,7 +67,5 @@
       15
     ]
   },
-  "selected_parameters": "Not recovered from core-only materials; no invented final baseline configurations.",
-  "native_sources_and_adapters": "Not bundled; legacy private adapters not validated for4.0.",
-  "all_external_comparisons_reproduced": false
+  "release_scope": "Comparison method descriptions and protocol settings. Baseline implementations, adapters, tuned configurations and comparison result artifacts are outside this core release."
 }

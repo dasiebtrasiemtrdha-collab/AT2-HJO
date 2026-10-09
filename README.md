@@ -8,19 +8,21 @@ This repository provides the AT2-HJO core implementation, including the simulato
 
 Public release of additional project materials requires institutional approval. Following acceptance, we will initiate the release-review procedure and publish the approved experimental materials in this same repository as a versioned release.
 
-## Actual contents
+## Repository contents
 
 | Path | Contents |
 |---|---|
 | `src/at2hjo/revision4/` | Simulator, physical/deployment/queue execution, networks, learners, data and reporting |
 | `src/at2hjo/geometry/`, `communications/`, `device.py` | Geometry, channels and CPU/CUDA selection |
-| `configs/revision4/` | Functional, development and planned formal profiles, physical parameters and seed roles |
+| `configs/revision4/` | Functional, development and full-scale training profiles, physical parameters and seed roles |
 | `data/example/`, `data/example_open/` | Hash-verified small regular and stochastic/open synthetic inputs |
 | `tests/`, `scripts/` | Tests, installation, input-statistics checks and file verification |
 | `models/quick_34st/` | Functional-run logs and metadata; optional `.pt` files from the model asset |
 | `evidence/`, `docs/` | Verification receipts, scope, parameter and architecture documentation |
-| `PARAMETERS.csv`, `EXPERIMENT_MAP.csv`, `BASELINE_SCOPE.json` | Parameters, experiment entry points and excluded comparison scope |
+| `PARAMETERS.csv`, `EXPERIMENT_MAP.csv`, `BASELINE_SCOPE.json` | Parameters, experiment entry points and comparison-material scope |
 | `requirements/`, `third_party/` | Dependency locks, notices and dependency licenses |
+
+The verification evidence covers short CPU/CUDA training, evaluation and recovery runs, including the 34-ST example and 59 tests. Full-scale training profiles and commands are included; full-scale result artifacts and comparison implementations are outside this core release. `EXPERIMENT_MAP.csv` identifies the experiment-specific runners required for the timing, adaptation, ablation and interaction analyses.
 
 
 ## Installation
@@ -66,7 +68,7 @@ Resume `--episodes` is a cumulative target. Evaluation uses restricted tensor/pr
 
 ## Optional functional models
 
-Download **AT2HJO_QuickModels_34ST_4.0.2.zip** from the same GitHub release. Extract both distributions in the same parent directory; both have the top-level folder `AT2HJO`. Checkpoints then appear at `models/quick_34st/`.
+Download [**AT2HJO_QuickModels_34ST_4.0.2.zip**](https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO/releases/download/v4.0.2/AT2HJO_QuickModels_34ST_4.0.2.zip). This 34-ST example supports installation, inference and recovery checks. Extract the source and model distributions in the same parent directory; both have the top-level folder `AT2HJO`. Checkpoints then appear at `models/quick_34st/`.
 
 ```bash
 python scripts/verify_files.py --root models/quick_34st --manifest models/quick_34st/FILE_MANIFEST.json
@@ -74,7 +76,7 @@ python -m at2hjo.cli evaluate --checkpoint models/quick_34st/evaluation.pt --see
 python -m at2hjo.cli resume --checkpoint models/quick_34st/resume.pt --trust-checkpoint --episodes 3 --device cpu --output runs/supplied_model_resume
 ```
 
-The supplied recovery model uses the Linux CPU lock; exact recovery on Windows CUDA is not claimed. The evaluation model supports read-only inference on compatible CPU/CUDA runtimes. Verify source with `python scripts/verify_files.py --root . --manifest FILE_MANIFEST.json`.
+The supplied recovery model uses the Linux CPU dependency lock. Exact recovery requires its matching runtime; for inference on compatible CPU/CUDA runtimes, use the evaluation model. Verify source with `python scripts/verify_files.py --root . --manifest FILE_MANIFEST.json`.
 
 ## Synthetic inputs and seeds
 
@@ -89,7 +91,7 @@ python scripts/validate_input_statistics.py --output results/input_statistics.js
 
 Named streams use SHA-256 of `seed/episode/stream_name`; learner/replay streams are separate and saved for recovery. Formal roots are training1000-1002, validation2000-2004, paired-test0-19. Development roles are independently labelled. Evaluation accepts formal validation/test roots and records their role. Current generator checks appear in `evidence/input_statistics.json`.
 
-## Architecture and planned formal runs
+## Architecture and full-scale training profiles
 
 MLPs use 256-256 ReLU. TD3 has scheduling/CPU/UOWC/RF heads, twin critics and targets. DQN scores state/candidate pairs with a thermal-aware prior. The regulator has single-head attention (history4, width64), interval policy and value critic. Complete native definitions are in `networks.py`; each run writes `network_summary.json` and `state_layout.json`. Other network sizes require independently initialized compatible networks.
 
