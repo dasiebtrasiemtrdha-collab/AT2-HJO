@@ -8,8 +8,8 @@
     "EXPERIMENT_MAP.csv": "721aaafafed299c957b1cfa7ab96ff15d1989e3c0baad240fa3b8665b6fd155a",
     "LICENSE_STATUS.md": "2840293577e09515bbc1ef3c46b1aa9251b75be189c554853a9ad7d6b7700e40",
     "PARAMETERS.csv": "9d3ee8a7dafe9626c1c950f676683d79635d9d671861229f7ed8aa07cc0d9412",
-    "PUBLIC_RELEASE.json": "8d581e50dcd8172c2307ab638128096f3fe3701c04a4088d8f1e09f39afe8e7a",
-    "README.md": "69416f51e68a60f8b3458517efe7ddbefac55e7fcb68a47bd3404b0f0ca14ec8",
+    "PUBLIC_RELEASE.json": "1432fc51e72368a8799880b1c38f9d79f234373f46e2102933e99569b45ebaf9",
+    "README.md": "597d7dfcda005c52e3cd55d04136c3c4c47089d7fe6c38ad995b405287ce4f0b",
     "RELEASE_VERSION": "7495cbe7f1498fa4d475fec21b7def377b7650c9ac8432228d7e361a94cb225c",
     "SCIENTIFIC_SPEC_VERSION": "c7a75282215d937ffc5158e19785604ea6fd17b54e76ae7185ac09d77e652c9f",
     "SOURCE_MANIFEST.json": "8c095b08f3868f1a007ddb610313daad51b928bedb2c32e6e21c6c987d6ca15d",
@@ -193,5 +193,6 @@
     "third_party/licenses/wheel-0.45.1/wheel/vendored/packaging/LICENSE.BSD": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
     "wheels/at2hjo-4.0.2-py3-none-any.whl": "3acc9d87fd8678415b2273844a869d64f18cac10ab6ab25c79f564152e60edbb"
   },
-  "documentation_revision": "docs.3"
+  "documentation_revision": "docs.3",
+  "distribution_revision": "links.1"
 }

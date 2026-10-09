@@ -68,7 +68,7 @@ Resume `--episodes` is a cumulative target. Evaluation uses restricted tensor/pr
 
 ## Optional functional models
 
-Download [**AT2HJO_QuickModels_34ST_4.0.2.zip**](https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO/releases/download/v4.0.2/AT2HJO_QuickModels_34ST_4.0.2.zip). This 34-ST example supports installation, inference and recovery checks. Extract the source and model distributions in the same parent directory; both have the top-level folder `AT2HJO`. Checkpoints then appear at `models/quick_34st/`.
+Download [**AT2HJO_QuickModels_34ST_4.0.2.zip**](https://github.com/dasiebtrasiemtrdha-collab/AT2-HJO/releases/download/v4.0.2-docs.3/AT2HJO_QuickModels_34ST_4.0.2.zip). This 34-ST example supports installation, inference and recovery checks. Extract the source and model distributions in the same parent directory; both have the top-level folder `AT2HJO`. Checkpoints then appear at `models/quick_34st/`.
 
 ```bash
 python scripts/verify_files.py --root models/quick_34st --manifest models/quick_34st/FILE_MANIFEST.json
