@@ -6,7 +6,7 @@ Software **4.0.2-public**; simulator/state identity `tcom_4_0_fifo_certificate_v
 
 This repository provides the AT2-HJO core implementation, including the simulator, improved DQN, improved TD3, attention regulator, training/evaluation/recovery scripts, complete network definitions, configurations, random seeds, synthetic input generators, example datasets and executable checkpoints. The current quick example contains **two 17-slot training episodes (34 ST steps)**.
 
-Public release of additional project materials requires institutional approval. Following acceptance, we will initiate the release-review procedure and publish the approved experimental materials in this same repository as a versioned release.
+Following acceptance, we will initiate the institutional release-review procedure and publish the approved experimental materials in this repository as a versioned release.
 
 ## Repository contents
 
@@ -22,7 +22,7 @@ Public release of additional project materials requires institutional approval. 
 | `PARAMETERS.csv`, `EXPERIMENT_MAP.csv`, `BASELINE_SCOPE.json` | Parameters, experiment entry points and comparison-material scope |
 | `requirements/`, `third_party/` | Dependency locks, notices and dependency licenses |
 
-The verification evidence covers short CPU/CUDA training, evaluation and recovery runs, including the 34-ST example and 59 tests. Full-scale training profiles and commands are included; full-scale result artifacts and comparison implementations are outside this core release. `EXPERIMENT_MAP.csv` identifies the experiment-specific runners required for the timing, adaptation, ablation and interaction analyses.
+The package includes the 34-ST example, 59-test results and short CPU/CUDA run records. Full-scale training profiles and commands are provided. Timing, adaptation, ablation, convergence and external comparison experiments require separate runners; their full-scale result artifacts are outside this core package. See `EXPERIMENT_MAP.csv` for the experiment entry points.
 
 
 ## Installation
@@ -64,7 +64,7 @@ python -m pytest tests -q -p no:cacheprovider
 
 Resume `--episodes` is a cumulative target. Evaluation uses restricted tensor/primitive loading. Recovery contains additional NumPy/Python RNG/replay state and requires `--trust-checkpoint` for a trusted, checksum-verified checkpoint. Exact recovery requires matching source and Python/NumPy/PyTorch version strings; CPU and CUDA builds differ. Evaluation or a fresh local training run can be used when recovery versions differ.
 
-`--algorithm improved-dqn`, `improved-td3`, `at2-hjo` selects LT, ST, joint operation. LT/ST functional profiles are included. Small batches/warm-up/delays intentionally differ from formal settings; see `docs/PARAMETER_CROSSWALK.md`.
+`--algorithm improved-dqn`, `improved-td3`, `at2-hjo` selects LT, ST, joint operation. The quick profiles use smaller batches and warm-up budgets; settings are listed in `docs/PARAMETER_CROSSWALK.md`.
 
 ## Optional functional models
 
@@ -97,17 +97,17 @@ MLPs use 256-256 ReLU. TD3 has scheduling/CPU/UOWC/RF heads, twin critics and ta
 
 Formal defaults: actorLR1e-4, critic/regulatorLR3e-4, DQN range[1e-5,3e-4], batch128, replay100000, gamma.99, tau.005, rho5, weights(.5,.3,.2). Execution includes persistent queues/transfers, executed-action critics, continuous-only target smoothing, actual-duration SMDP discount and terminal masks. Resource logits use `tanh(h/2)`; `head_temperature=2` is the divisor, not a softmax temperature.
 
-In `certified` mode, the ST reward contains the operating-cost terms without a proposal penalty; `rho` weights the actor auxiliary regularizer. In `resource_only` mode, the ST reward additionally subtracts `rho * proposal_phi`, and the same actor regularizer is retained. The quick example uses certified mode; each profile declares its execution mode.
+`resource_only` is the regular-load projected-action soft-constraint benchmark. `certified` adds joint hard execution checks. The quick example uses certified mode; profile JSON files explicitly identify their execution mode.
 
 ```bash
 python -m at2hjo.cli train --config configs/revision4/formal_resource_only.json --seed 1000 --device auto --output runs/formal_soft1000
 python -m at2hjo.cli train --config configs/revision4/formal_certified.json --seed 1000 --device auto --output runs/formal_certified1000
 ```
 
-These longer training profiles retain 2500 episodes and 500 slots. At M30/B3/S6/K20, state dimension13773 and full-capacity LT/ST state-pair arrays alone require about22.04GB together. Candidates/actions/Python objects, models, optimizers and atomic checkpoint copies add overhead: plan approximately48-64GB host RAM and sufficient disk. CUDA does not remove this host-memory requirement.
+The full-scale training profiles use 2500 episodes and 500 slots. At M30/B3/S6/K20, state dimension13773 and full-capacity LT/ST state-pair arrays alone require about22.04GB together. Candidates/actions/Python objects, models, optimizers and atomic checkpoint copies add overhead: plan approximately48-64GB host RAM and sufficient disk. CUDA does not remove this host-memory requirement.
 
 Runs write raw slots/intervals, metrics, counters, source/config identities and checkpoints. `aggregate` and `plot` process those run outputs.
 
 ## Scope, citation and license
 
-See `docs/RELEASE_SCOPE.md`, `docs/PARAMETER_CROSSWALK.md` and `CITATION.md`. Cite the repository and corresponding version when using this implementation. Dependency notices are retained in `third_party/`. Additional project materials will follow the institutional approval procedure described above.
+See `docs/RELEASE_SCOPE.md`, `docs/PARAMETER_CROSSWALK.md` and `CITATION.md`. Cite the repository and corresponding version when using this implementation. Dependency notices are provided in `third_party/`.

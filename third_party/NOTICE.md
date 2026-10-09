@@ -1,1 +1,1 @@
-Dependencies retain their respective licenses. See the requirement locks and bundled dependency notices. No new project-wide research-source license was assigned during preparation; see LICENSE_STATUS.md.
+Dependency license texts are included in `licenses/`. See the requirement locks for package versions and `LICENSE_STATUS.md` at the project root for the research-source license status.

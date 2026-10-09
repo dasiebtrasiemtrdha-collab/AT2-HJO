@@ -5,11 +5,11 @@
     ".gitignore": "2ceea3ea6bac9750c2241ae055936a3f00071d2af0cdcb87a4228abd77fa29e5",
     "BASELINE_SCOPE.json": "9e728f6c6f571d6ab3663df3a020fc4de94f66944326e441c188f9074cb3d6c7",
     "CITATION.md": "275cd924ce6ae5e681725174f61d2c51b875763d95f8c88511bd347fc9703e0c",
-    "EXPERIMENT_MAP.csv": "21a25643832b177c0c47a88369e4d1dea5fe9ac6555d4860b85463963e69b11f",
-    "LICENSE_STATUS.md": "848c1d2929036bd8d6470ca004434ce37685c52075a2915f41978194c6ed6af4",
+    "EXPERIMENT_MAP.csv": "721aaafafed299c957b1cfa7ab96ff15d1989e3c0baad240fa3b8665b6fd155a",
+    "LICENSE_STATUS.md": "2840293577e09515bbc1ef3c46b1aa9251b75be189c554853a9ad7d6b7700e40",
     "PARAMETERS.csv": "9d3ee8a7dafe9626c1c950f676683d79635d9d671861229f7ed8aa07cc0d9412",
-    "PUBLIC_RELEASE.json": "e6c3a7816d695f376fa1eb97d4fba286ea1618cccf5e9fd56fade040abedee73",
-    "README.md": "2cb047c1fae5e398bb57232235a11b8e3538580f8e4028c698fb0e113b02034e",
+    "PUBLIC_RELEASE.json": "8d581e50dcd8172c2307ab638128096f3fe3701c04a4088d8f1e09f39afe8e7a",
+    "README.md": "69416f51e68a60f8b3458517efe7ddbefac55e7fcb68a47bd3404b0f0ca14ec8",
     "RELEASE_VERSION": "7495cbe7f1498fa4d475fec21b7def377b7650c9ac8432228d7e361a94cb225c",
     "SCIENTIFIC_SPEC_VERSION": "c7a75282215d937ffc5158e19785604ea6fd17b54e76ae7185ac09d77e652c9f",
     "SOURCE_MANIFEST.json": "8c095b08f3868f1a007ddb610313daad51b928bedb2c32e6e21c6c987d6ca15d",
@@ -40,8 +40,8 @@
     "data/example_open/requests.jsonl": "2ba5c301632ebfacded11a60a61d6a230319513eee78748080f42ee7b22f5bf6",
     "data/example_open/trace.npz": "8942e3eafb9b79b72773cf26b39add716a5d059695a7ca0e606441f343b904ac",
     "docs/GPU_VERIFICATION.md": "24b82a41532562155663d93a9e189da67d3a655535880bf6a8d85b92f9650a6c",
-    "docs/PARAMETER_CROSSWALK.md": "7fcf3addf374d35e9d565d531e79f5828a4ddbe6c10c5888c42ab8a838363c90",
-    "docs/RELEASE_SCOPE.md": "6c00e92fabda7e494014d32332d4079e8bf5c255686e2ceee1be374475485806",
+    "docs/PARAMETER_CROSSWALK.md": "a633a1ea84d60b8e2c1452db1055a34f78ffa494446461dda4e8db8475b6e94e",
+    "docs/RELEASE_SCOPE.md": "81c7b9a1c2c5030b6a3812f4f5ec0868fb06000245ed9caf9fc492d573f81cb5",
     "evidence/VERIFICATION.json": "0bb8c888a6f3cf2e9715a42c6f16094fc5efb448a4497a40b28bd68aafa63966",
     "evidence/dataset_checks.json": "537426cb559e01964b9e583ccd54aadfa48a60e1397133f20b458c2b1d698113",
     "evidence/evaluation_check.json": "c7ba5c3faa080dc8c3c1a458fdd4bc7278aa6b4f9f4c6747db9f6aade06c7a23",
@@ -106,7 +106,7 @@
     "tests/test_revision4_learning_integration.py": "0f4b7bcc0b91aa6f595982919d134659eb08d0a19b159798398d2d4b31f9b67a",
     "tests/test_revision4_physical_integration.py": "1f32575469c66d7eded6a87950d8112507bb635eb89b2848285154944f215884",
     "tests/test_revision4_recovery.py": "14f36ae0142e1fc59da25fbf81c09e2b3bf768a1b3817bbeee415614e14791eb",
-    "third_party/NOTICE.md": "78fd224579d1f1aec4c12dbe3ca71e0657b4d415a67652533ef6216e81e01529",
+    "third_party/NOTICE.md": "0bd0d8bf31c8ba85873e8677ce2c46a6c3960d5525aefb91d501fdde465e610e",
     "third_party/licenses/attrs-26.1.0/attrs-26.1.0.dist-info/licenses/LICENSE": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
     "third_party/licenses/build-1.2.2.post1/build-1.2.2.post1.dist-info/LICENSE": "aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f",
     "third_party/licenses/colorama-0.4.6/colorama-0.4.6.dist-info/licenses/LICENSE.txt": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318",
@@ -193,5 +193,5 @@
     "third_party/licenses/wheel-0.45.1/wheel/vendored/packaging/LICENSE.BSD": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
     "wheels/at2hjo-4.0.2-py3-none-any.whl": "3acc9d87fd8678415b2273844a869d64f18cac10ab6ab25c79f564152e60edbb"
   },
-  "documentation_revision": "docs.2"
+  "documentation_revision": "docs.3"
 }
